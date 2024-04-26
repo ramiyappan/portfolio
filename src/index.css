@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Aurellyah Lovely Free Font';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Aurellyah Lovely Free Font'), url('https://fonts.cdnfonts.com/s/88036/Aurellyah Lovely Script Free.woff') format('woff');
+}

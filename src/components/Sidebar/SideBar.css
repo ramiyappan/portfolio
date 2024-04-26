@@ -1,0 +1,48 @@
+.bg-theme-color {
+  background-color: #b5a55e;
+}
+
+body {
+    overflow-x: hidden;
+  }
+
+hr{
+  color:rgba(120, 119, 119, 0.597)
+}
+
+.profile-image{
+  max-width: 160px;
+}
+
+.tagline{
+  font-size: 0.86rem;
+}
+
+.icon{
+  color: #b5a55e;
+}
+
+.icon-with-border {
+  height: 1.9rem;
+  width: 1.9rem;
+  border-radius: 50%; /* Adjust border-radius as needed */
+  text-align: center;
+  padding: 1px;
+}
+
+
+.sp-font{
+  font-family: 'Aurellyah Lovely Free Font', sans-serif;
+} 
+
+.nav-item .nav-link.active{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-item .nav-link:hover{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav{
+  margin: 2rem;
+}
