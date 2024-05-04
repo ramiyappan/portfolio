@@ -1,10 +1,39 @@
 .bg-theme-color {
-  background-color: #b5a55e;
+  background-color: var(--primary-color);
 }
 
 body {
     overflow-x: hidden;
   }
+
+@media screen and (min-width: 768px){
+  .sidebar{
+    width: 250px;
+    overflow-y: auto;
+    position: fixed;
+  }
+  .sidebar.open{
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 576px){
+  .sidebar.open{
+    position: static;
+  }
+
+  .sidebar.closed{
+    position: fixed;
+  }
+
+  .add-div{
+    margin: 2rem;
+  }
+}
+
+.nav-toggler {
+  transition: transform 0.15s ease-in-out;
+}
 
 hr{
   color:rgba(120, 119, 119, 0.597)
@@ -19,17 +48,22 @@ hr{
 }
 
 .icon{
-  color: #b5a55e;
+  color: var(--primary-color);
 }
 
-.icon-with-border {
+.icon-box {
   height: 1.9rem;
   width: 1.9rem;
   border-radius: 50%; /* Adjust border-radius as needed */
   text-align: center;
   padding: 1px;
+  background-color: white;
 }
 
+.icon-box:hover{
+  background-color: rgba(255, 255, 255, 0.788);
+  transition: 200ms ease-in;
+}
 
 .sp-font{
   font-family: 'Aurellyah Lovely Free Font', sans-serif;

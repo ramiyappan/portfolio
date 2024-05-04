@@ -2,10 +2,27 @@ a.no-text-decoration {
   text-decoration: none;
 }
 
-.border-theme-color {
-  border-color: #5d6ba7;
+:root {
+  --primary-color: #b5a55e;
+  /* color options: 
+    #b5a55e;
+    #5D6BA7;
+    #5469C9;
+    #D67553;  
+  */
 }
 
-.theme-color {
-  color: #5d6ba7;
+h3{
+  font-weight: bold;
+  margin-top: 0;
+}
+
+
+.btn-primary {
+  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #ae9b45;
+  --bs-btn-hover-border-color: #ae9b45;
 }

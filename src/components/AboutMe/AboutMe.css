@@ -1,9 +1,22 @@
+@media screen and (min-width: 768px){
+    .profile-section{
+        width: calc(100% - 250px);
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 576px){
+    /* div.profile-section > *:first-child{
+        padding-top: 4rem;
+    } */
+}
+
 .greytext{
     color: #4f4f4f;
 }
 
-.profile-section{
-    height: 380px;
+.intro-picture{
+    max-width: 600px;
 }
 
 .section-title{
@@ -20,4 +33,38 @@
     position: absolute;
     left: 0;
     top: 0;
+}
+
+.btn{
+    font-weight: bold;
+    padding: .375rem 1rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.svg-inline{
+    height: 1em;
+    vertical-align: -.125em;
+    overflow: visible;
+    box-sizing: content-box;
+    display: inline-block;
+}
+
+.item{
+    margin-bottom: 2rem;
+}
+
+.item-icon{
+    font-size: 1.875rem;
+    color: var(--primary-color);
+}
+
+.item-title{
+    font-size: 1rem;
+}
+
+.item-desc{
+    color: #4f4f4f;
+    font-size: 0.875rem;
 }

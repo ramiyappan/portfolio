@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Vanilla JavaScript",
+        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
+        "icon": "JS"
+    },
+    {
+        "title": "Angular & React",
+        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
+        "icon": "React"
+    },
+    {
+        "title": "Node.js",
+        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
+        "icon": "NodeJS"
+    },
+    {
+        "title": "HTML & CSS",
+        "description": "",
+        "icon": "HTML"
+    },
+    {
+        "title": "Python",
+        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
+        "icon": "Python"
+    },
+    {
+        "title": "SQL, Postgres & Snowflake",
+        "description": "",
+        "icon": "SQL"
+    },
+    {
+        "title": "AWS & Kubernetes",
+        "description": "",
+        "icon": "AWS"
+    },
+    {
+        "title": "Tableau & Excel",
+        "description": "",
+        "icon": "Excel"
+    }
+]

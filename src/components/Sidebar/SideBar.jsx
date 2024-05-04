@@ -4,8 +4,8 @@ import {FaLinkedinIn, FaLaptopCode, FaFileLines} from 'react-icons/fa6'
 import {FiMenu} from 'react-icons/fi'
 import { SiLeetcode } from "react-icons/si";
 import { FaYoutube, FaEnvelopeOpenText } from "react-icons/fa";
-import { Link } from 'react-router-dom'
 import { IoPerson } from "react-icons/io5";
+import { Link, NavLink } from 'react-router-dom'
 import './SideBar.css'
 import '../../App.css'
 
@@ -25,93 +25,128 @@ const SideBar = () => {
     }, []);
 
     const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
+        if(window.innerWidth>768){
+            window.location.href='/';
+        }
+        else{
+            setIsSidebarOpen(prevState => !prevState)
+        }
     };
 
     return (
-        <div className={`col-sm-2 bg-theme-color d-flex flex-column ${isSidebarOpen ? 'min-vh-100' : ''}`}>
-            <nav className="navbar p-3 d-md-none position-absolute start-0">
-                <button onClick={toggleSidebar} className="btn btn-sm border-1 border-white">
+        <>
+        <div className={`sidebar col-sm-2 bg-theme-color d-flex flex-column ${isSidebarOpen ? 'open' : 'closed'}`}>
+            {/* Nav button */}
+            <nav className="navbar p-2 d-md-none position-absolute start-0">
+                <button 
+                    onClick={() => toggleSidebar()}
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#sidebarCollapse"
+                    aria-controls="sidebarCollapse" 
+                    aria-expanded={isSidebarOpen ? "true" : "false"} 
+                    aria-label="Toggle Sidebar"
+                    className="btn btn-sm nav-toggler border-1 border-white"
+                >
                     <FiMenu color="white" size={25} />
                 </button>
             </nav>
 
             {/* Special Name Font */}
-            <div className="p-1">
-                <h2>
-                    <button onClick={toggleSidebar} className="no-text-decoration bg-transparent border-0 pt-2 text-white">
-                        <div className='sp-font fs-2'>Ramaswamy Iyappan</div>
+            <div className="p-md-1 p-2 pb-0">
+                <h2 className='text-center '>
+                    <button 
+                        onClick={() => toggleSidebar()}
+                        data-bs-toggle="collapse" 
+                        data-bs-target="#sidebarCollapse"
+                        aria-controls="sidebarCollapse" 
+                        aria-expanded={isSidebarOpen ? "true" : "false"} 
+                        aria-label="Toggle Sidebar"
+                        className="no-text-decoration bg-transparent border-0 pt-2 pb-2 pb-md-0 text-white"
+                    >
+                        <div className='sp-font fs-3'>Ramaswamy Iyappan</div>
                     </button>
                 </h2>
             </div>
 
             {/* Profile Section */}
-            <div className={`p-2 pt-0 pb-0 collapse collapse-vertical ${isSidebarOpen ? 'show' : ''}`}>
+            <div 
+                id="sidebarCollapse" 
+                className={`p-2 pt-md-0 pb-md-0 collapse collapse-vertical ${window.innerWidth>768 ? 'show' : ''}`}
+            >
                 <div>
                     <img className='profile-image w-75 rounded mx-auto d-block'
-                        src='./dp3.png' 
+                        src='./dp3.png'
                         alt="Avatar" />
                 </div>
-                <div className="tagline p-1 pt-3 text-center text-white">
-                    <p>Welcome to my Digital Space. Explore, Learn, and Connect!</p>
+                <div className="tagline py-md-1 px-md-0 pt-3 p-3 mt-md-2 text-center text-white">
+                    <p>Hi, my name is Ram and Welcome to my Digital Space. Dive in to Explore, Learn, and Connect!</p>
                 </div>
                 {/* Social Icons */}
                 <div className="d-flex flex-row justify-content-center">
                     <div className="px-2">
-                        <div className="icon-with-border bg-white">
-                            <Link to="https://www.linkedin.com/in/ramaswamy-iyappan">
+                        <Link to="https://www.linkedin.com/in/ramaswamy-iyappan">
+                            <div className="icon-box">
                                 <FaLinkedinIn size={18} className='icon'/>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                     <div className="px-2">
-                        <div className="icon-with-border bg-white">
-                            <Link to="https://www.github.com/ramiyappan">
+                        <Link to="https://www.github.com/ramiyappan">
+                            <div className="icon-box">
                                 <BsGithub size={18} className='icon'/>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                     <div className="px-2">
-                        <div className="icon-with-border bg-white">
-                            <Link to="">
+                        <Link to="https://leetcode.com/u/ramiyappan/">
+                            <div className="icon-box">
                                 <SiLeetcode size={18} className='icon'/>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                     <div className="px-2">
-                        <div className="icon-with-border bg-white">
-                            <Link to="">
+                        <Link to="https://www.youtube.com/pianistram">
+                            <div className="icon-box">
                                 <FaYoutube size={18} className='icon'/>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 </div>
-                <hr/>
+                <hr className='mt-4 mb-3'/>
             </div>
             
-            <ul className="navbar-nav flex-column mt-1 mb-1">
+            {/* Tabs Section */}
+            <ul 
+                id="sidebarCollapse" 
+                className={`navbar-nav flex-column my-md-0 ms-md-4 mx-1 mb-4 mt-0 collapse collapse-vertical ${
+                    window.innerWidth>768 ? 'show' : ''}
+                `}
+            >
                 <li className="nav-item fw-bold text-white">
-                    <Link to="/" className="nav-link px-2">
+                    <NavLink exact to="/" className="nav-link px-2" activeClassName="active">
                         <IoPerson size={18} className='me-2'/> About Me
-                    </Link>
+                    </NavLink>
                 </li>
                 <li className="nav-item fw-bold text-white">
-                    <Link to="/" className="nav-link px-2">
+                    <NavLink to="/portfolio" className="nav-link px-2" activeClassName="active">
                         <FaLaptopCode size={18} className='me-2'/> Portfolio
-                    </Link>
+                    </NavLink>
                 </li>
                 <li className="nav-item fw-bold text-white">
-                    <Link to="/" className="nav-link px-2">
+                    <NavLink to="/resume" className="nav-link px-2" activeClassName="active">
                         <FaFileLines size={18} className='me-2'/> Resume
-                    </Link>
+                    </NavLink>
                 </li>
                 <li className="nav-item fw-bold text-white">
-                    <Link to="/" className="nav-link px-2">
+                    <NavLink to="/contact" className="nav-link px-2" activeClassName="active">
                         <FaEnvelopeOpenText size={18} className='me-2'/> Contact
-                    </Link>
+                    </NavLink>
                 </li>
             </ul>
         </div>
+
+        <div className={`d-md-none ${isSidebarOpen ? '' : 'add-div'}`}></div>
+        </>
     )
 }
 
