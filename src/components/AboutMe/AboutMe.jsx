@@ -14,7 +14,7 @@ import { BiLogoPostgresql } from "react-icons/bi";
 const AboutMe = () => {
     return (
         // removed col-sm-10
-        <div className="profile-section p-md-0"> 
+        <> 
 
             {/* Profile Section */}
             <section className="p-3 p-lg-5 bg-light">
@@ -133,7 +133,7 @@ const AboutMe = () => {
                 </div>
             </section>
         
-        </div>
+        </>
     )
 }
 

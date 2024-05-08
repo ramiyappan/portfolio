@@ -123,22 +123,22 @@ const SideBar = () => {
                 `}
             >
                 <li className="nav-item fw-bold text-white">
-                    <NavLink exact to="/" className="nav-link px-2" activeClassName="active">
+                    <NavLink to="/" className="nav-link px-2" activeclassname="active">
                         <IoPerson size={18} className='me-2'/> About Me
                     </NavLink>
                 </li>
                 <li className="nav-item fw-bold text-white">
-                    <NavLink to="/portfolio" className="nav-link px-2" activeClassName="active">
+                    <NavLink to="/portfolio" className="nav-link px-2" activeclassname="active">
                         <FaLaptopCode size={18} className='me-2'/> Portfolio
                     </NavLink>
                 </li>
                 <li className="nav-item fw-bold text-white">
-                    <NavLink to="/resume" className="nav-link px-2" activeClassName="active">
+                    <NavLink to="/resume" className="nav-link px-2" activeclassname="active">
                         <FaFileLines size={18} className='me-2'/> Resume
                     </NavLink>
                 </li>
                 <li className="nav-item fw-bold text-white">
-                    <NavLink to="/contact" className="nav-link px-2" activeClassName="active">
+                    <NavLink to="/contact" className="nav-link px-2" activeclassname="active">
                         <FaEnvelopeOpenText size={18} className='me-2'/> Contact
                     </NavLink>
                 </li>

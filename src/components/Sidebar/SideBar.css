@@ -47,10 +47,6 @@ hr{
   font-size: 0.86rem;
 }
 
-.icon{
-  color: var(--primary-color);
-}
-
 .icon-box {
   height: 1.9rem;
   width: 1.9rem;

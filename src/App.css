@@ -1,22 +1,77 @@
+
+:root {
+  --primary-color: #b5a55e;
+  --hover-color: #8a7414;
+  /* color options: 
+  #b5a55e;
+  #5D6BA7;
+  #5469C9;
+  #D67553;  
+  */
+}
+
+@media screen and (min-width: 768px){
+  .content-section{
+    width: calc(100% - 250px);
+    margin-left: 250px;
+  }
+}
+
+.greytext{
+  color: #4f4f4f;
+}
+
 a.no-text-decoration {
   text-decoration: none;
 }
 
-:root {
-  --primary-color: #b5a55e;
-  /* color options: 
-    #b5a55e;
-    #5D6BA7;
-    #5469C9;
-    #D67553;  
-  */
+a{
+  color: var(--primary-color);
+}
+
+.icon{
+  color: var(--primary-color);
+}
+
+.btn{
+  font-weight: bold;
+  padding: .375rem 1rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.svg-inline{
+  height: 1em;
+  vertical-align: -.125em;
+  overflow: visible;
+  box-sizing: content-box;
+  display: inline-block;
+}
+
+.svg-inline.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.svg-inline.fa-lg {
+  vertical-align: -.2em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: .05em;
+  vertical-align: -.075em;
 }
 
 h3{
   font-weight: bold;
   margin-top: 0;
 }
-
 
 .btn-primary {
   color: white;

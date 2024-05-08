@@ -1,0 +1,16 @@
+.single-col-max-width{
+    max-width: 820px;
+}
+
+.text-link{
+    text-decoration: none;
+}
+
+.text-link:hover{
+    text-decoration: underline;
+    color: var(--hover-color);
+}
+
+.list-inline-item .icon:hover{
+    color: var(--hover-color);
+}
