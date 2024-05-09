@@ -35,10 +35,6 @@ body {
   transition: transform 0.15s ease-in-out;
 }
 
-hr{
-  color:rgba(120, 119, 119, 0.597)
-}
-
 .profile-image{
   max-width: 160px;
 }

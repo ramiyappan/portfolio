@@ -16,7 +16,7 @@
     },
     {
         "title": "HTML & CSS",
-        "description": "",
+        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
         "icon": "HTML"
     },
     {
@@ -26,17 +26,17 @@
     },
     {
         "title": "SQL, Postgres & Snowflake",
-        "description": "",
+        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
         "icon": "SQL"
     },
     {
         "title": "AWS & Kubernetes",
-        "description": "",
+        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
         "icon": "AWS"
     },
     {
         "title": "Tableau & Excel",
-        "description": "",
+        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
         "icon": "Excel"
     }
 ]

@@ -1,0 +1,96 @@
+.resume-container {
+    max-width: 1140px;
+    /* color: #4f4f4f; */
+}
+
+.resume-wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.025);
+}
+
+.resume-name {
+    font-size: 2.6rem;
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+    color: var(--primary-color);
+}
+
+.resume-tagline {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.resume-contact {
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    font-size: 0.75rem;
+}
+
+a.resume-link {
+    color: #4f4f4f;
+}
+
+.resume-profile-image {
+    max-width: 120px;
+}
+
+.resume-intro {
+    font-size: 0.875rem;
+}
+
+.resume-section-heading {
+    position: relative;
+    padding-left: 1rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.15rem;
+    color: var(--primary-color);
+}
+
+.resume-section-heading:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.resume-main .item-title {
+    font-size: 1rem;
+}
+
+.resume-main .item-meta {
+    font-size: 0.75rem;
+}
+
+.resume-main .item-content {
+    font-size: 0.875rem;
+}
+
+.resume-aside {
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.resume-aside .item {
+    font-size: 0.875rem;
+}
+
+.resume-aside .item-title {
+    font-size: 1rem;
+}
+
+.resume-education-list, .resume-awards-list {
+    font-size: 0.875rem;
+}
+
+.resume-degree-time-org, .resume-degree-time {
+    font-size: 0.75rem;
+}
+
+.resume-social-list {
+    font-size: 0.75rem;
+}
+
+.resume-link .svg-inline{
+    vertical-align: -0.34em;
+}

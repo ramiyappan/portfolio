@@ -12,7 +12,7 @@
     display: inline-block;
     width: 5px;
     height: 100%;
-    background: #06a598;
+    background: var(--primary-color);
     position: absolute;
     left: 0;
     top: 0;

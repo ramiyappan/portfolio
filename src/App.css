@@ -10,6 +10,19 @@
   */
 }
 
+body{
+  color: #4f4f4f;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2f2f2f;
+  font-weight: bold;
+}
+
+hr {
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
 @media screen and (min-width: 768px){
   .content-section{
     width: calc(100% - 250px);
@@ -27,6 +40,10 @@ a.no-text-decoration {
 
 a{
   color: var(--primary-color);
+}
+
+.single-col-max-width{
+  max-width: 820px;
 }
 
 .icon{
@@ -66,6 +83,10 @@ a{
   font-size: 1.25em;
   line-height: .05em;
   vertical-align: -.075em;
+}
+
+.fa-2x {
+  font-size: 2em;
 }
 
 h3{
