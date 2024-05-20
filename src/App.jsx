@@ -1,35 +1,46 @@
 import {
   Route,
   Routes,
-  BrowserRouter
-  // createBrowserRouter,
-  // createRoutesFromElements,
-  // RouterProvider,
-  // Outlet
+  useLocation
 } from 'react-router-dom';
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import MainLayout from './layouts/MainLayout';
 import PortfolioPage from './pages/PortfolioPage'
 import ResumePage from './pages/ResumePage'
 import ContactPage from './pages/ContactPage'
-import AboutMe from './components/AboutMe/AboutMe';
+import AboutPage from './pages/AboutPage';
+import ProjectPage from './pages/ProjectPage';
+import ProjectDetails from './ProjectDetails.json'
+import Game from './components/Game/Game'
 
 const App = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <div className="App">
       <div className="container-fluid">
         <div className="row">
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<MainLayout />}>
-                <Route index element={<AboutMe />} />
-                <Route path="/portfolio" element={<PortfolioPage />}/>
-                <Route path="/resume" element={<ResumePage />}/>
-                <Route path="/contact" element={<ContactPage />}/>
+          {/* <BrowserRouter> */}
+          <Routes>
+            <Route path="/" element={<MainLayout location={location}/>}>
+              <Route index element={<AboutPage />} />
+              <Route path="/portfolio" element={<PortfolioPage />}/>
+              <Route path="/resume" element={<ResumePage />}/>
+              <Route path="/contact" element={<ContactPage />}/>
+              <Route path="/projects">
+                {ProjectDetails.map((project, index) => (
+                  <Route key={index} path={`${project.id}`} element={<ProjectPage project={project} />}/>
+                ))}
               </Route>
-            </Routes>
-          </BrowserRouter>
+              <Route path="/game" element={<Game />}/>
+            </Route>
+          </Routes>
+          {/* </BrowserRouter> */}
         </div>
       </div>
     </div>

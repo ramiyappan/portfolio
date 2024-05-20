@@ -52,7 +52,7 @@ const SideBar = () => {
             </nav>
 
             {/* Special Name Font */}
-            <div className="p-md-1 p-2 pb-0">
+            <div className="p-md-1 mb-md-1 p-2 pb-0">
                 <h2 className='text-center '>
                     <button 
                         onClick={() => toggleSidebar()}

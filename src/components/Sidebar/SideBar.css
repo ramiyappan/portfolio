@@ -12,8 +12,13 @@ body {
     overflow-y: auto;
     position: fixed;
   }
+
   .sidebar.open{
     min-height: 100vh;
+  }
+
+  .sp-font.fs-3{
+    font-size: 1.6rem !important;
   }
 }
 
@@ -24,10 +29,15 @@ body {
 
   .sidebar.closed{
     position: fixed;
+    z-index: 1;
   }
 
   .add-div{
     margin: 2rem;
+  }
+
+  .profile-image{
+    max-width: 140px !important;
   }
 }
 

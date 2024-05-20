@@ -3,24 +3,41 @@ import './Resume.css'
 import { Link } from 'react-router-dom'
 import { FaFilePdf, FaGlobe, FaLinkedin, FaLocationDot, FaSquarePhone } from "react-icons/fa6";
 import { FaEnvelopeSquare, FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
+import data from './Projectinfo.json'
 
 const Resume = () => {
+
+    const handleDownloadPDF = () => {
+        // Replace 'your-pdf-file.pdf' with the path to your PDF file
+        const pdfFilePath = './Data_Analyst_Resume.pdf';
+        const link = document.createElement('a');
+        link.href = pdfFilePath;
+        link.download = 'Ramaswamy_Iyappan_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <>
+            {/* Header Section */}
             <section className="cta-section bg-light py-5">
                 <div className="container text-center single-col-max-width">
-                    <h2 className="fw-bold fs-2 mb-3">
+                    <h2 className="heading mb-3">
                         Online Resume
                     </h2>
-                    <Link className="btn btn-primary">
-                        <FaFilePdf/>{' '}
+                    <Link className="btn btn-primary" onClick={handleDownloadPDF}>
+                        <FaFilePdf className='svg-inline me-2'/>
                         Download PDF Version
                     </Link>
                 </div>
             </section>
 
+            {/* Resume Section */}
             <div className="container resume-container px-3 px-lg-5">
                 <article className="resume-wrapper mx-auto bg-light p-5 mb-5 my-5 shadow-lg">
+
+                    {/* Resume Header */}
                     <div className="resume-header">
                         <div className="row align-items-center">
                             <div className="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
@@ -52,6 +69,7 @@ const Resume = () => {
 
                     <hr/>
 
+                    {/* Resume Summary */}
                     <div className="resume-intro py-3">
                         <div className="row align-items center">
                             <div className="col-12 col-md-3 col-xl-2 text-center">
@@ -75,9 +93,14 @@ const Resume = () => {
 
                     <hr/>
 
+                    {/* Resume Body */}
                     <div className="resume-body">
                         <div className="row">
+
+                            {/* Left side */}
                             <div className="resume-main col-12 col-lg-8 col-xl-9 pe-0 pe-lg-5">
+
+                                {/* Work Experience */}
                                 <section className="work-section py-3">
                                     <h3 className="text-uppercase resume-section-heading mb-4">
                                         Work Experiences
@@ -101,32 +124,39 @@ const Resume = () => {
                                     </div>
                                 </section>
 
+                                {/* Projects */}
                                 <section className="project-section py-3">
                                     <h3 className="text-uppercase resume-section-heading mb-4">
                                         Projects
                                     </h3>
-                                    <div className="item mb-3">
-                                        <div className="item-heading row align-items center mb-2">
-                                            <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                                Credit Card Fraud Detection
-                                            </h4>
-                                            <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-                                                Open Source
+                                    {data.map((item, i) => (
+                                        <div className="item mb-3" key={i}>
+                                            <div className="item-heading row align-items center mb-2">
+                                                <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                                                    {item.title}
+                                                </h4>
+                                                <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                                                    {item.date}
+                                                </div>
+                                            </div>
+                                            <div className="item-content">
+                                                <p>{item.description}</p>
+                                                <ul className="resume-list">
+                                                    {item.points?.map((point, j) => (
+                                                        <li key={j}>{point}</li>
+                                                        ))
+                                                    }
+                                                </ul>
                                             </div>
                                         </div>
-                                        <div className="item-content">
-                                            <p>
-                                            Preprocessed unstructured data through EDA, resulting in a 20% improvement in model performance.
-                                            Identified and addressed class imbalance issue, leading to a 95% increase in minority class detection.
-                                            Implemented RandomForest ensemble learning, achieving an AUC-PR of 0.88, which translates to a significant
-                                            improvement in fraud detection rate.
-                                            </p>
-                                        </div>
-                                    </div>
+                                        ))
+                                    }
                                 </section>
                             </div>
 
+                            {/* Right side */}
                             <aside className="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+                                {/* Skills */}
                                 <section className="skills-section py-3">
                                     <h3 className="text-uppercase resume-section-heading mb-4">
                                         Skills
@@ -154,6 +184,7 @@ const Resume = () => {
                                     </div>
                                 </section>
 
+                                {/* Education */}
                                 <section className="education-section py-3">
                                     <h3 className="text-uppercase resume-section-heading mb-4">
                                         Education
@@ -172,6 +203,7 @@ const Resume = () => {
                                     </ul>
                                 </section>
 
+                                {/* Awards */}
                                 <section className="education-section py-3">
                                     <h3 className="text-uppercase resume-section-heading mb-4">
                                         Awards
@@ -193,6 +225,7 @@ const Resume = () => {
 
                     <hr/>
 
+                    {/* Footer */}
                     <div className="resume-footer text-center">
                         <ul className="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
                             <li className="list-inline-item mb-lg-0 me-3">

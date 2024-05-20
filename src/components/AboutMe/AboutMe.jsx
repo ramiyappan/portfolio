@@ -10,6 +10,7 @@ import { FaFileLines, FaCss3Alt } from 'react-icons/fa6'
 import { IoLogoJavascript, IoLogoTableau } from "react-icons/io5";
 import { SiMysql, SiKubernetes, SiMicrosoftexcel } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
+import ProjectCard from '../Portfolio/ProjectCard';
 
 const AboutMe = () => {
     return (
@@ -132,7 +133,30 @@ const AboutMe = () => {
                     </div>
                 </div>
             </section>
-        
+
+            <div className="container">
+                <hr />
+            </div>
+            
+            {/* Featured Projects */}
+            <section className="featured-section p-3 p-lg-5">
+                <div className="container">
+                    <h2 className="section-title fw-bold mb-5">
+                        Featured Projects
+                    </h2>
+                    <ProjectCard activeFilter={'*'} isHome={true}/>
+                    <div className="text-center py-3">
+                        <Link to="/portfolio" className="btn btn-primary">
+                            <FaArrowAltCircleRight className='svg-inline me-2'/>
+                            More Projects
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            <div className="container">
+                <hr />
+            </div>
         </>
     )
 }

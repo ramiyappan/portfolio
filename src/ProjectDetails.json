@@ -1,0 +1,228 @@
+[
+    {
+        "id": 1,
+        "title": "Heart Disease Prediction",
+        "intro": "Detect Heart Disease risk in patients by analyzing various medical features (BP, BodyFat, etc.,) using a Logistic Regression Gradient Descent model.",
+        "dataset": "https://archive.ics.uci.edu/ml/datasets/Heart+Disease",
+        "datasetName": "Cleveland Database",
+        "overview": "This project aims to predict heart disease risk in patients by analyzing various medical features (e.g., BP, BodyFat) using a Logistic Regression Gradient Descent model. By leveraging the Cleveland Database, the project involves training and evaluating the model to provide insights into its performance and effectiveness.",
+        "requirements": [
+            "Train, Test and Validation files from Cleveland dataset.",
+            "Python / Jupyter Notebook with libraries Pandas, Numpy, SkLearn, & Matplotlib."
+        ],
+        "shortDesc": "Download all the dataset files and setup python environment with the required packages. Check the github repo for further instructions.",
+        "challenges": [
+            "Implement an optimization method (gradient descent) that allows to train logistic regression models.",
+            "Understand the relationship between the optimization objective (cross-entropy error), training set error, and test set error, and how these relate to generalization.",
+            "Understand the impact of parameters and design choices on the convergence and performance of the gradient descent algorithm and the learned models."
+        ],
+        "solution": [
+            "The first task involved encoding a gradient descent algorithm to learn a logistic regression model that takes training examples as inputs and returns the learned weight vector 𝑤. A learning rate of 10e-5 was used, with automatic termination if the magnitude of the gradient fell below 10e-3. Experiments were conducted on the training set using three different bounds on the maximum number of iterations: ten thousand (10,000), one hundred thousand (100,000), and one million (1,000,000) iterations.",
+            "Performance metrics, including cross-entropy error and classification error, were calculated on the training dataset, along with the time taken for the model to train. Another model from SkLearn, using the same parameters, was deployed for comparison. Finally, StandardScaler() was applied to scale the features, and the results were compared again to assess the improvement in fit."
+        ],
+        "metrics": [
+            {
+                "name": "Efficiency",
+                "data": "75%",
+                "unit": "up",
+                "desc": "Time taken to train the model was reduced by 75%."
+            },
+            {   "name": "Classification error",
+                "data": "40%",
+                "unit": "down",
+                "desc": "The model achieved a lowest error of 0.13."
+            },
+            {
+                "name": "Cross-entropy error",
+                "data": "32%",
+                "unit": "down",
+                "desc": "Cross-entropy error decreased with more iterations."
+            },
+            {
+                "name": "Accuracy",
+                "data": "6%",
+                "unit": "up",
+                "desc": "Scaling features helped boost test accuracy."
+            }
+        ],
+        "results": "The classification error and cross-entropy error on the training data gradually reduced as the number of iterations increased, indicating more effective convergence of gradient descent. However, more iterations also increased runtime. Scaling features helped to cut down the cost and increase the accuracy of the model.",
+        "industry": "Health",
+        "git": "https://github.com/ramiyappan/Heart-disease-Prediction",
+        "thumb": "./plan1.jpg",
+        "pic1": "../meeting.jpg",
+        "pic2": "../graph.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Credit Card Fraud Detection",
+        "intro": "Implement ensemble learning models to identify fraudulent credit card transactions, enhancing financial security in digital banking.",
+        "dataset": "https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud?resource=download",
+        "datasetName": "Kaggle Database",
+        "overview": "Detect fraudulent credit card transactions in real-time using machine learning models trained on a dataset of European cardholders' transactions from September 2013. The project addresses the class imbalance issue by employing various sampling techniques to create a balanced training set, enabling more accurate predictions. Models used include Random Forest, XGBoost, Voting Classifier, and Multi-Layer Perceptron, with performance evaluated using precision, recall, and AUC-PR metrics.",
+        "requirements": [
+            "Python / Jupyter Notebook with libraries Pandas, Numpy, SkLearn, Matplotlib, and imbalanced-learn",
+            "Credit card transaction dataset from Kaggle",
+            "Split dataset into train, test, and validation files"
+        ],
+        "shortDesc": "Setup involves downloading the dataset from Kaggle, setting up a Python environment with necessary libraries, and preparing the data by scaling features and splitting into train and test sets. Refer GitHub repo for further instructions.",
+        "challenges": [
+            "Addressing the severe class imbalance in the dataset with only 0.172% fraudulent transactions.",
+            "Choosing appropriate sampling methods to balance the dataset effectively.",
+            "Comparing the performance of different classifiers to find the most accurate model.",
+            "Avoiding overfitting while ensuring the model generalizes well to unseen data.",
+            "Ensuring real-time detection and minimizing false positives."
+        ],
+        "solution": [
+            "To address the problem of credit card fraud detection, we began by tackling the significant class imbalance present in the dataset. Various sampling techniques such as RandomOverSampler (ROS), Synthetic Minority Oversampling Technique (SMOTE), and RandomUnderSampler (RUS) were employed to create a more balanced training dataset. These techniques ensured that the machine learning models could learn from a balanced distribution, enhancing their ability to detect fraudulent transactions effectively.",
+            "Building on the balanced dataset, several machine learning models were developed and trained, including Random Forest, XGBoost, Voting Classifier, and Multi-Layer Perceptron. Each model was evaluated using precision, recall, and AUC-PR to determine their performance in identifying fraudulent transactions. The Random Forest model, combined with ROS and RUS, emerged as the top performer, demonstrating high precision and AUC-PR scores.",
+            "Evaluation of the models revealed that balancing the dataset significantly improved detection accuracy, with the Random Forest model achieving the best results. This approach not only enhanced the model's ability to correctly identify fraud but also minimized false positives, thereby providing a robust solution for real-time fraud detection."
+        ],
+        "metrics": [
+            {
+                "name": "Precision",
+                "data": "94.2%",
+                "unit": "",
+                "desc": "The proportion of predicted fraudulent transactions that were actually fraud."
+            },
+            {
+                "name": "Recall",
+                "data": "88.8%",
+                "unit": "",
+                "desc": "The proportion of true fraud cases that were correctly identified by the model."
+            },
+            {
+                "name": "AUC-PR",
+                "data": "88.4%",
+                "unit": "",
+                "desc": "The area under the precision-recall curve, indicating the trade-off between precision and recall."
+            }
+        ],
+        "results": "The Random Forest model, when trained with a combination of RandomOverSampler and RandomUnderSampler, achieved the highest precision (0.942) and AUC-PR (0.884), while XGBoost showed the highest recall (0.888). The project demonstrated that balancing the dataset using sampling techniques significantly improves model performance in detecting fraudulent transactions.",
+        "industry": "Financial Services",
+        "git": "https://github.com/ramiyappan/Credit-card-Fraud",
+        "thumb": "./plan.jpg",
+        "pic1": "../laptop1.jpg",
+        "pic2": "../board1.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Hand-written digits Prediction",
+        "intro": "Identified hand-written digits from image data using K-Means Clustering and Dimensionality Reduction.",
+        "dataset": "https://github.com/ramiyappan/Flowers-digits-prediction/blob/main/Image/image_test.txt",
+        "datasetName": "MNIST Database",
+        "overview": "This project aims to classify handwritten digits (0-9) using K-Means Clustering on image data. The dataset consists of 10,000 images, each represented as a 28x28 matrix of pixel values, flattened into 1x784 vectors. Without labels, the task involves clustering the images into 10 groups corresponding to the digits.",
+        "requirements": [
+            "Python / Jupyter Notebook",
+            "Libraries: Pandas, Numpy, SkLearn, Matplotlib"
+        ],
+        "shortDesc": "Download the dataset and set up the Python environment with the required packages. The dataset comprises 10,000 handwritten digit images, each scaled to 28x28 pixels, flattened into a 1x784 vector.",
+        "challenges": [
+            "Implementing K-Means Clustering to handle large image datasets.",
+            "Exploring dimensionality reduction techniques (PCA & t-SNE) to improve clustering performance.",
+            "Evaluating the effectiveness of different clustering solutions."
+        ],
+        "solution": [
+            "The initial step involved implementing the K-Means Clustering algorithm, starting by picking k random data points as the initial centers. For the image dataset, k=10 was used to classify the digits from 0-9. The algorithm assigned data points to the nearest centroid by computing Euclidean distances, recalculating centroids iteratively until convergence.",
+            "Dimensionality reduction techniques like PCA and t-SNE were explored to handle the high-dimensional image data. Although PCA was initially used, it provided only an average performance. Switching to t-SNE significantly improved the clustering results by reducing the dataset to 2 dimensions while maintaining maximum variance. The model trained with t-SNE achieved a higher V-score compared to the PCA-based model."
+        ],
+        "metrics": [
+            {
+                "name": "V-Score using PCA",
+                "data": 51,
+                "unit": "%",
+                "desc": "The V-Score achieved using PCA for dimensionality reduction."
+            },
+            {
+                "name": "V-Score using t-SNE",
+                "data": 86,
+                "unit": "%",
+                "desc": "The improved V-Score achieved using t-SNE for dimensionality reduction."
+            },
+            {
+                "name": "Runtime with PCA",
+                "data": 30,
+                "unit": "minutes",
+                "desc": "Time taken to run K-Means clustering with PCA."
+            },
+            {
+                "name": "Runtime with t-SNE",
+                "data": "<2",
+                "unit": "minutes",
+                "desc": "Time taken to run K-Means clustering with t-SNE."
+            }
+        ],
+        "results": "The project demonstrated that t-SNE outperformed PCA in dimensionality reduction for clustering handwritten digits. The K-Means model trained on t-SNE-reduced data achieved a V-Score of 86%, significantly higher than the 51% V-Score from the PCA-based model. This highlights the importance of choosing the right dimensionality reduction technique to improve clustering performance.",
+        "industry": "AI/ML",
+        "git": "https://github.com/ramiyappan/Flowers-digits-prediction",
+        "thumb": "./numbers.jpg",
+        "pic1": "../laptop.jpg",
+        "pic2": "../board.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Survey-Form Web Application",
+        "intro": "",
+        "dataset": "",
+        "datasetName": "",
+        "overview": "Built and deployed a microservices-based survey form application using CI/CD pipeline on AWS EC2.",
+        "requirements": [],
+        "shortDesc": "",
+        "challenges": [],
+        "solution": [],
+        "metrics": [],
+        "results": "",
+        "industry": "",
+        "git": "https://github.com/ramiyappan/cicd-pipeline",
+        "thumb": "",
+        "pic1": "",
+        "pic2": ""
+    },
+    {
+        "id": 5,
+        "title": "Auto-pilot Controller Input Prediction",
+        "intro": "Predicted controller inputs for an auto-pilot system using Linear Regression with Polynomial features and Regularization.",
+        "dataset": "https://github.com/ramiyappan/Autopilot-LinearReg/blob/main/train_autopilot.csv",
+        "datasetName": "Auto-pilot Database",
+        "overview": "This project involves predicting the controller inputs for an auto-pilot system based on sensor data. Linear Regression with Polynomial features was employed and compared the performance with and without Regularization.",
+        "requirements": [
+            "Python / Jupyter Notebook",
+            "Libraries: Pandas, Numpy, SkLearn, Matplotlib"
+        ],
+        "shortDesc": "Download the dataset and set up the Python environment with the required packages. The dataset contains sensor data and controller inputs for training the model.",
+        "challenges": [
+            "Implementing Polynomial Regression and Regularized Linear Regression.",
+            "Handling overfitting in high-degree polynomial models.",
+            "Evaluating the effectiveness of different regularization parameters."
+        ],
+        "solution": [
+            "At first implemented Polynomial Regression, transforming the input data to include polynomial features up to degree 6. The model was trained and evaluated on both training and test datasets, computing Root Mean Square Error (RMSE) to measure performance.",
+            "To address overfitting, we applied Regularized Linear Regression using L2 regularization. Various regularization parameters (lambda values) were tested to find the optimal balance between bias and variance. The model's performance was compared with the non-regularized version to highlight the impact of regularization."
+        ],
+        "metrics": [
+            {
+                "name": "RMSE without Regularization (M=5)",
+                "data": 68.55,
+                "unit": "",
+                "desc": "Test RMSE for Polynomial Regression of degree 5."
+            },
+            {
+                "name": "RMSE with Regularization",
+                "data": 14.84,
+                "unit": "",
+                "desc": "Test RMSE for Regularized Polynomial Regression."
+            },
+            {
+                "name": "Test RMSE",
+                "data": "78.3%",
+                "unit": "down",
+                "desc": "The percentage reduction in Test RMSE achieved by applying L2 regularization."
+            }
+        ],
+        "results": "The project demonstrated that regularization significantly improves the model's performance on the test data. While the Polynomial Regression model without regularization had a low training error, it suffered from high test error due to overfitting. Regularization helped mitigate overfitting, resulting in a more balanced performance with a significantly lower test RMSE.",
+        "industry": "AI/ML",
+        "git": "https://github.com/ramiyappan/Autopilot-LinearReg",
+        "thumb": "./books.jpg",
+        "pic1": "../autopilot.jpg",
+        "pic2": "../graph1.jpg"
+    }
+]
