@@ -82,3 +82,11 @@ body {
 .navbar-nav{
   margin: 2rem;
 }
+
+.home .nav-link{
+  color: white;
+}
+
+.home .nav-link.active{
+  color: rgba(0, 0, 0, 0.5);
+}

@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="text-center">
                     <Link to="/contact" className='btn btn-primary'>
                         <FaPaperPlane className='svg-inline me-2'/>
-                        Hire Me
+                        Contact
                     </Link>
                 </div>
             </div>

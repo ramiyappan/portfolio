@@ -49,8 +49,8 @@
         "industry": "Health",
         "git": "https://github.com/ramiyappan/Heart-disease-Prediction",
         "thumb": "./plan1.jpg",
-        "pic1": "../meeting.jpg",
-        "pic2": "../graph.jpg"
+        "pic1": "./meeting.jpg",
+        "pic2": "./graph.jpg"
     },
     {
         "id": 2,
@@ -101,8 +101,8 @@
         "industry": "Financial Services",
         "git": "https://github.com/ramiyappan/Credit-card-Fraud",
         "thumb": "./plan.jpg",
-        "pic1": "../laptop1.jpg",
-        "pic2": "../board1.jpg"
+        "pic1": "./laptop1.jpg",
+        "pic2": "./board1.jpg"
     },
     {
         "id": 3,
@@ -155,30 +155,11 @@
         "industry": "AI/ML",
         "git": "https://github.com/ramiyappan/Flowers-digits-prediction",
         "thumb": "./numbers.jpg",
-        "pic1": "../laptop.jpg",
-        "pic2": "../board.jpg"
+        "pic1": "./laptop.jpg",
+        "pic2": "./board.jpg"
     },
     {
         "id": 4,
-        "title": "Survey-Form Web Application",
-        "intro": "",
-        "dataset": "",
-        "datasetName": "",
-        "overview": "Built and deployed a microservices-based survey form application using CI/CD pipeline on AWS EC2.",
-        "requirements": [],
-        "shortDesc": "",
-        "challenges": [],
-        "solution": [],
-        "metrics": [],
-        "results": "",
-        "industry": "",
-        "git": "https://github.com/ramiyappan/cicd-pipeline",
-        "thumb": "",
-        "pic1": "",
-        "pic2": ""
-    },
-    {
-        "id": 5,
         "title": "Auto-pilot Controller Input Prediction",
         "intro": "Predicted controller inputs for an auto-pilot system using Linear Regression with Polynomial features and Regularization.",
         "dataset": "https://github.com/ramiyappan/Autopilot-LinearReg/blob/main/train_autopilot.csv",
@@ -222,7 +203,26 @@
         "industry": "AI/ML",
         "git": "https://github.com/ramiyappan/Autopilot-LinearReg",
         "thumb": "./books.jpg",
-        "pic1": "../autopilot.jpg",
-        "pic2": "../graph1.jpg"
+        "pic1": "./autopilot.jpg",
+        "pic2": "./graph1.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Survey-Form Web Application",
+        "intro": "",
+        "dataset": "",
+        "datasetName": "",
+        "overview": "",
+        "requirements": [],
+        "shortDesc": "",
+        "challenges": [],
+        "solution": [],
+        "metrics": [],
+        "results": "",
+        "industry": "",
+        "git": "https://github.com/ramiyappan/cicd-pipeline",
+        "thumb": "",
+        "pic1": "",
+        "pic2": ""
     }
 ]

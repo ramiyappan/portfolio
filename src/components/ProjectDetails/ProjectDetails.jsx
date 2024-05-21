@@ -27,7 +27,7 @@ const Project = ({projectdetails}) => {
                     <div className="project-meta bg-light p-4">
                         <div className="row g-4 g-lg-5">
                             <div className="col-md-5 col-lg-4 col-xxl-3 d-none d-md-block">
-                                <img src={'.' + projectdetails.thumb} alt="icon" className="project-thumb img-fluid rounded" />
+                                <img src={projectdetails.thumb} alt="icon" className="project-thumb img-fluid rounded" />
                             </div>
                             <div className="col-12 col-md-7 col-lg-8 col-xxl-9">
                                 <div className="client-info">

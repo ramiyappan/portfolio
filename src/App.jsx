@@ -11,7 +11,7 @@ import ResumePage from './pages/ResumePage'
 import ContactPage from './pages/ContactPage'
 import AboutPage from './pages/AboutPage';
 import ProjectPage from './pages/ProjectPage';
-import ProjectDetails from './ProjectDetails.json'
+import ProjectDetails from './components/ProjectDetails/ProjectDetails.json'
 import Game from './components/Game/Game'
 
 const App = () => {
@@ -25,7 +25,6 @@ const App = () => {
     <div className="App">
       <div className="container-fluid">
         <div className="row">
-          {/* <BrowserRouter> */}
           <Routes>
             <Route path="/" element={<MainLayout location={location}/>}>
               <Route index element={<AboutPage />} />
@@ -40,7 +39,6 @@ const App = () => {
               <Route path="/game" element={<Game />}/>
             </Route>
           </Routes>
-          {/* </BrowserRouter> */}
         </div>
       </div>
     </div>

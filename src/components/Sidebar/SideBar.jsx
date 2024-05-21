@@ -3,8 +3,9 @@ import {BsGithub} from 'react-icons/bs'
 import {FaLinkedinIn, FaLaptopCode, FaFileLines} from 'react-icons/fa6'
 import {FiMenu} from 'react-icons/fi'
 import { SiLeetcode } from "react-icons/si";
-import { FaYoutube, FaEnvelopeOpenText } from "react-icons/fa";
+import { FaYoutube, FaEnvelopeOpenText, FaHome } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
+import { MdGames } from "react-icons/md";
 import { Link, NavLink } from 'react-router-dom'
 import './SideBar.css'
 import '../../App.css'
@@ -12,17 +13,23 @@ import '../../App.css'
 const SideBar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth > 768 ? true : false);
 
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         setIsSidebarOpen(window.innerWidth > 768);
+    //     };
+
+    //     window.addEventListener('resize', handleResize);
+
+    //     return () => {
+    //         window.removeEventListener('resize', handleResize);
+    //     };
+    // }, []);
+
     useEffect(() => {
-        const handleResize = () => {
-            setIsSidebarOpen(window.innerWidth > 768);
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
+        if (isSidebarOpen && window.innerWidth < 768) {
+            window.scrollTo(0, 0);
+            }
+        }, [isSidebarOpen]);
 
     const toggleSidebar = () => {
         if(window.innerWidth>768){
@@ -50,6 +57,13 @@ const SideBar = () => {
                     <FiMenu color="white" size={25} />
                 </button>
             </nav>
+
+            {/* Home button */}
+            <div className='home end-0 d-md-none position-absolute p-2 my-1 mx-1'>
+                <NavLink to="/" className="nav-link" activeclassname="active">
+                    <FaHome size={35} className='mx-1' />
+                </NavLink>
+            </div>
 
             {/* Special Name Font */}
             <div className="p-md-1 mb-md-1 p-2 pb-0">
@@ -140,6 +154,11 @@ const SideBar = () => {
                 <li className="nav-item fw-bold text-white">
                     <NavLink to="/contact" className="nav-link px-2" activeclassname="active">
                         <FaEnvelopeOpenText size={18} className='me-2'/> Contact
+                    </NavLink>
+                </li>
+                <li className="nav-item fw-bold text-white d-md-none">
+                    <NavLink to="/game" className="nav-link px-2" activeclassname="active">
+                        <MdGames size={18} className='me-2'/> Play Game
                     </NavLink>
                 </li>
             </ul>
