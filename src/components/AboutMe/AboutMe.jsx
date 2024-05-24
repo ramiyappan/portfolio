@@ -3,16 +3,50 @@ import './AboutMe.css'
 import data from './Skills.json'
 import { Link } from 'react-router-dom'
 import { 
-    FaArrowAltCircleRight, FaReact, FaAngular, FaNodeJs, 
-    FaPython, FaHtml5, FaSnowflake, FaAws
+    FaArrowAltCircleRight, FaReact, FaAngular, FaDocker,
+    FaPython, FaHtml5, FaSnowflake, FaAws, FaBootstrap
 } from "react-icons/fa";
 import { FaFileLines, FaCss3Alt } from 'react-icons/fa6'
 import { IoLogoJavascript, IoLogoTableau } from "react-icons/io5";
-import { SiMysql, SiKubernetes, SiMicrosoftexcel } from "react-icons/si";
+import { SiMysql, SiKubernetes, SiMicrosoftexcel, SiTailwindcss } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import ProjectCard from '../Portfolio/ProjectCard';
 
 const AboutMe = () => {
+
+    const iconMapping = {
+        JS: [
+            <FaHtml5 className='svg-inline me-2' color="#DE6E3C" />,
+            <FaCss3Alt className='svg-inline me-2' color="#53A7DC" />,
+            <IoLogoJavascript className='svg-inline' color='#c2ae15' />
+        ],
+        React: [
+            <FaAngular className='svg-inline me-2' color="#CA3327" />,
+            <FaReact className='svg-inline' color="#62D4FA" />
+        ],
+        AWS: [
+            <FaAws className='svg-inline' color="#ff9900" />
+        ],
+        BOOT: [
+            <FaBootstrap className='svg-inline me-2' color='#7d0cf7' />,
+            <SiTailwindcss className='svg-inline' color='#35b0b4' />
+        ],
+        Python: [<FaPython className='svg-inline' color="#456E9C" />],
+        SQL: [
+            <SiMysql className='svg-inline me-2' color="#4479A1" />,
+            <BiLogoPostgresql className='svg-inline me-2' color="#316192" />,
+            <FaSnowflake className='svg-inline' color="#29b5e8" />
+        ],
+        KUBE: [
+            <SiKubernetes className='svg-inline me-2' color="#326CE5" />,
+            <FaDocker className='svg-inline' color='#1393da' />
+        ],
+        Excel: [
+            <IoLogoTableau className='svg-inline me-2' color="#295f9a" />,
+            <SiMicrosoftexcel className='svg-inline' color="#187946" />
+        ]
+    };
+    
     return (
         // removed col-sm-10
         <> 
@@ -81,55 +115,19 @@ const AboutMe = () => {
                         complex data into actionable strategies that enhance decision-making and drive business growth.
                     </div>
                     <div className="row">
-                        {data.map((item, i) => (
-                            <div className="item col-6 col-lg-3" key={i}>
-                                <div className="item-inner">
-                                    <div className="item-icon">
-                                        {item.icon === 'JS' && <IoLogoJavascript className='svg-inline' />}
-                                        {item.icon === 'React' &&
-                                            <>
-                                                <FaAngular className='svg-inline me-2' color="#CA3327"/>
-                                                <FaReact className='svg-inline' color="#62D4FA"/>
-                                            </>
-                                        }
-                                        {item.icon === 'NodeJS' && <FaNodeJs className='svg-inline' color="#54B689"/>}
-                                        {item.icon === 'Python' && <FaPython className='svg-inline' color="#456E9C"/>}
-                                        {item.icon === 'HTML' &&
-                                            <>
-                                                <FaHtml5 className='svg-inline me-2' color="#DE6E3C"/>
-                                                <FaCss3Alt className='svg-inline' color="#53A7DC"/>
-                                            </>
-                                        }
-                                        {item.icon === 'SQL' &&
-                                            <>
-                                                <SiMysql className='svg-inline me-2' color="#4479A1"/>
-                                                <BiLogoPostgresql className='svg-inline me-2' color="#316192"/>
-                                                <FaSnowflake className='svg-inline' color="#29b5e8"/>
-                                            </>
-                                        }
-                                        {item.icon === 'AWS' &&
-                                            <>
-                                                <FaAws className='svg-inline me-2' color="#ff9900"/>
-                                                <SiKubernetes className='svg-inline' color="#326CE5"/>
-                                            </>
-                                        }
-                                        {item.icon === 'Excel' &&
-                                            <>
-                                                <IoLogoTableau className='svg-inline me-2' color="#295f9a"/>
-                                                <SiMicrosoftexcel className='svg-inline' color="#187946"/>
-                                            </>
-                                        }
-                                    </div>
-                                    <h3 className="item-title">
-                                        {item.title}
-                                    </h3>
-                                    <div className="item-desc">
-                                        {item.description}
-                                    </div>
-                                </div>
+                    {data.map((item, i) => (
+                        <div className="item col-6 col-lg-3" key={i}>
+                        <div className="item-inner">
+                            <div className="item-icon">
+                            {iconMapping[item.icon].map((icon, idx) => (
+                                <span key={idx}>{icon}</span>
+                            ))}
                             </div>
-                            ))
-                        }
+                            <h3 className="item-title">{item.title}</h3>
+                            <div className="item-desc">{item.description}</div>
+                        </div>
+                        </div>
+                    ))}
                     </div>
                 </div>
             </section>

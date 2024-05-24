@@ -1,42 +1,42 @@
 [
     {
-        "title": "Vanilla JavaScript",
-        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
+        "title": "HTML, CSS & JavaScript",
+        "description": "Proficient in writing clean JavaScript, crafting semantic HTML markup, and creating visually appealing responsive CSS for building dynamic web applications.",
         "icon": "JS"
     },
     {
         "title": "Angular & React",
-        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
+        "description": "Experienced in developing scalable web apps with Angular, leveraging its powerful features and modular architecture. Proficient in creating reusable UI components with React.",
         "icon": "React"
     },
     {
-        "title": "Node.js",
-        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
-        "icon": "NodeJS"
+        "title": "AWS",
+        "description": "Certified AWS Solutions Architect and Developer Associate with hands-on experience in deploying & managing applications using services like EC2, S3, and Lambda.",
+        "icon": "AWS"
     },
     {
-        "title": "HTML & CSS",
-        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
-        "icon": "HTML"
+        "title": "Bootstrap & Tailwind CSS",
+        "description": "Experienced in rapidly building responsive, visually appealing UIs with Bootstrap's components. Proficient in utilizing Tailwind CSS for custom, utility-first designs.",
+        "icon": "BOOT"
     },
     {
         "title": "Python",
-        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
+        "description": "Proficient in utilizing Python for developing data science and machine learning models, leveraging frameworks like PyTorch and TensorFlow.",
         "icon": "Python"
     },
     {
         "title": "SQL, Postgres & Snowflake",
-        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
+        "description": "Skilled in writing optimized SQL queries, managing PostgreSQL databases, and leveraging Snowflake for scalable data warehousing and analytics.",
         "icon": "SQL"
     },
     {
-        "title": "AWS & Kubernetes",
-        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
-        "icon": "AWS"
+        "title": "Kubernetes & Docker",
+        "description": "Experienced in containerizing applications with Docker and orchestrating deployments using Kubernetes for efficient resource utilization and high availability.",
+        "icon": "KUBE"
     },
     {
         "title": "Tableau & Excel",
-        "description": "List skills/technologies here. You can change the icon above to any of the 1500+ FontAwesome 5 free icons available. Aenean commodo ligula eget dolor.",
+        "description": "Adept at creating interactive data visualizations with Tableau for effective data exploration. Skilled in leveraging Excel for data analysis and reporting.",
         "icon": "Excel"
     }
 ]
