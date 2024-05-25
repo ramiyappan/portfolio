@@ -1,28 +1,43 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { FaEye } from "react-icons/fa";
-import projectcards from './project-cards.json'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { FaEye } from 'react-icons/fa';
+import projectcards from './project-cards';
 import './Portfolio.css'
 
 const ProjectCard = ({ isHome, activeFilter }) => {
+    const [projectData, setProjectData] = useState([]);
+    const [transitionState, setTransitionState] = useState('entered');
 
-    let projectData;
+    useEffect(() => {
+        // Trigger exit transition
+        setTransitionState('exiting');
+        const timer = setTimeout(() => {
+            let filteredData;
+            if (isHome) {
+                filteredData = projectcards.slice(0, 4);
+            } else {
+                if (activeFilter !== '*') {
+                    filteredData = projectcards.filter(project => project.filter === activeFilter);
+                } else {
+                    filteredData = projectcards;
+                }
+            }
+            setProjectData(filteredData);
 
-    if (isHome) {
-        projectData = projectcards.slice(0, 4);
-    }
-    else {
-        if (activeFilter !== '*') {
-            projectData = projectcards.filter(project => project.filter === activeFilter);
-        } else {
-            projectData = projectcards;
-        }
-    };
+            // Trigger enter transition
+            setTransitionState('entering');
+            setTimeout(() => {
+                setTransitionState('entered');
+            }, 300);
+        }, 300); // Match this duration with the CSS transition duration
+
+        return () => clearTimeout(timer);
+    }, [isHome, activeFilter]);
 
     return (
-        <div className={`row ${isHome ? '' : 'project-cards isotope'}`}>
+        <div className={`row project-cards isotope`}>
             {projectData.map((project, i) => (
-                <div className={`col-md-6 mb-5 ${isHome ? '' : 'isotope-item'}`} key={i}>
+                <div className={`col-md-6 mb-5 isotope-item ${transitionState}`} key={i}>
                     <div className="card project-card">
                         <div className="row no-gutters">
                             <div className="col-12 col-xl-5 card-img-holder">
@@ -53,7 +68,7 @@ const ProjectCard = ({ isHome, activeFilter }) => {
                 </div>
             ))}
         </div>
-    )
-}
+    );
+};
 
-export default ProjectCard
+export default ProjectCard;

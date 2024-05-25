@@ -40,11 +40,6 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.project-cards .isotope-item.hidden {
-    opacity: 0;
-    pointer-events: none;
-}
-
 .project-card {
     border-radius: 20;
     background: #fafafa;
@@ -52,6 +47,28 @@
     position: relative;
     max-height: 200px;
 }
+
+.project-cards .isotope-item {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.project-cards .isotope-item.exiting {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.project-cards .isotope-item.entering {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+.project-cards .isotope-item.entered {
+    opacity: 1;
+    transform: scale(1);
+}
+
 
 .project-card .card-img-holder {
     height: 200px;
@@ -67,10 +84,6 @@
 
 .project-card .card-title {
     font-size: 1.125rem;
-}
-
-@media (min-width: 768px){
-
 }
 
 @media (max-width: 568px){
