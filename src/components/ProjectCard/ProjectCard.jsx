@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaEye } from 'react-icons/fa';
 import projectcards from './project-cards';
-import './Portfolio.css'
+import './ProjectCard.css'
 
 const ProjectCard = ({ isHome, activeFilter }) => {
     const [projectData, setProjectData] = useState([]);

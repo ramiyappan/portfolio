@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { FaPaperPlane } from "react-icons/fa";
 import './Portfolio.css'
-import ProjectCard from './ProjectCard';
+import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 
 const Portfolio = () => {
 

@@ -10,7 +10,7 @@ import { FaFileLines, FaCss3Alt } from 'react-icons/fa6'
 import { IoLogoJavascript, IoLogoTableau } from "react-icons/io5";
 import { SiMysql, SiKubernetes, SiMicrosoftexcel, SiTailwindcss } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
-import ProjectCard from '../Portfolio/ProjectCard';
+import ProjectCard from '../ProjectCard/ProjectCard';
 
 const AboutMe = () => {
 
