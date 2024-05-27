@@ -208,21 +208,45 @@
     },
     {
         "id": 5,
-        "title": "Survey-Form Web Application",
-        "intro": "",
+        "title": "Survey-form Web Application",
+        "intro": "Created a dynamic and scalable survey application using Angular, Springboot, Kubernetes, and AWS services.",
         "dataset": "",
         "datasetName": "",
-        "overview": "",
-        "requirements": [],
-        "shortDesc": "",
-        "challenges": [],
-        "solution": [],
-        "metrics": [],
-        "results": "",
-        "industry": "",
+        "overview": "The project involves creating a comprehensive and dynamic survey application that encompasses front-end development, back-end services, and database integration, followed by containerization and deployment through a CI/CD pipeline to achieve faster deployment times and enhanced user experience.",
+        "requirements": [
+            "Angular (HTML/CSS/JS) for front-end development",
+            "Spring Boot (Java) for back-end services",
+            "MySQL/AWS-RDS for database management",
+            "Github for storing project files and trigger a Jenkins CI/CD pipeline",
+            "Docker for containerization and Kubernetes for deployment on AWS-EC2"
+        ],
+        "shortDesc": "A full-stack survey application with integrated CI/CD pipeline, enabling seamless deployment and efficient user data management.",
+        "challenges": [
+            "Setting up a seamless integration between front-end and back-end services.",
+            "Ensuring data consistency and low latency with AWS RDS.",
+            "Efficiently containerizing the application for deployment.",
+            "Configuring a robust CI/CD pipeline for automated deployment.",
+            "Handling high traffic efficiently using Kubernetes and load balancing.",
+            "Monitoring and debugging deployed services for smooth operation."
+        ],
+        "solution": [
+            "The front-end of the survey application was developed using Angular, leveraging HTML, CSS, and JavaScript to create a responsive and user-friendly interface. The back-end was built with Spring Boot in Java, designed to handle form data and communicate with the database. A MySQL database was initially used for testing to ensure data was correctly stored and retrieved, and later, an Amazon RDS instance was set up for production to ensure scalable and reliable data storage.",
+            "To prepare for deployment, the application was containerized using Docker, and the repository was managed with GitHub. A CI/CD pipeline was established using Jenkins, which automated the build and deployment process. Jenkins was configured to trigger builds from GitHub commits, containerize the application using Docker, and deploy it on a Kubernetes cluster managed by Rancher within an AWS EC2 instance. This setup significantly reduced deployment time by 40%, enabling faster feature releases.",
+            "Kubernetes was utilized to manage the deployment, with an initial setup of three pods to handle application traffic. A load balancer was configured to efficiently distribute traffic across pods. Logs were reviewed using kubectl, and API calls were tested using Postman to ensure backend functionality. After successful form submissions, data was stored in an AWS RDS instance, demonstrating minimal latency and real-time updates on the application interface."
+        ],
+        "metrics": [
+            {
+            "name": "Deployment Time",
+            "data": "40%",
+            "unit": "down",
+            "desc": "The usage of the configured pipeline significantly reduced deployment times."
+            }
+        ],
+        "results": "The deployment of the survey application through a streamlined CI/CD pipeline enhanced efficiency, reduced deployment times, and improved the overall user experience. The use of Kubernetes and load balancing ensured the application could handle high traffic effectively, and real-time data storage in AWS RDS was achieved with minimal latency.",
+        "industry": "Web Development",
         "git": "https://github.com/ramiyappan/cicd-pipeline",
-        "thumb": "",
-        "pic1": "",
-        "pic2": ""
+        "thumb": "./web1.jpg",
+        "pic1": "./web3.jpg",
+        "pic2": "./laptop2.jpg"
     }
 ]

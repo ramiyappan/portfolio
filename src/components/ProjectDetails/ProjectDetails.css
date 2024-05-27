@@ -15,6 +15,10 @@
     font-size: 1rem;
 }
 
+.project-thumb {
+    height: 300px;
+}
+
 .metric .inner {
     border: 1px solid rgba(0, 0, 0, 0.025);
     height: 100%;
