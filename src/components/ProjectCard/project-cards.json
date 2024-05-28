@@ -3,7 +3,7 @@
         "id": 1,
         "title": "Heart Disease Prediction",
         "description": "Detect Heart Disease risk in patients using a Logistic Regression ML model developed in Python, to learn from their medical history.",
-        "client": "Tools: Python - ML Libraries",
+        "tools": "Tools: Python - ML Libraries",
         "icon": "./heartrate.jpg",
         "filter": "ml"
     },
@@ -11,7 +11,7 @@
         "id": 2,
         "title": "Credit Card Fraud Detection",
         "description": "Analyze & Identify fraudulent Credit card transactions using Ensemble models & Neural networks in Pytorch. Visualize results using Tableau.",
-        "client": "Tools: Python - PyTorch, ML Libraries",
+        "tools": "Tools: Python - PyTorch, ML Libraries",
         "icon": "./creditcard.jpg",
         "filter": "ml"
     },
@@ -19,7 +19,7 @@
         "id": 3,
         "title": "Hand-written digits Prediction",
         "description": "Identified hand-written digits from image data using K-Means Clustering and Dimensionality Reduction.",
-        "client": "Tools: Python - ML Libraries",
+        "tools": "Tools: Python - ML Libraries",
         "icon": "./numbers.jpg",
         "filter": "ml"
     },
@@ -27,7 +27,7 @@
         "id": 4,
         "title": "Auto-pilot Controller Input Prediction",
         "description": "Predicted controller inputs for an auto-pilot system using Linear Regression with Polynomial features and Regularization.",
-        "client": "Tools: Python - ML Libraries",
+        "tools": "Tools: Python - ML Libraries",
         "icon": "./autopilot.jpg",
         "filter": "ml"
     },
@@ -35,8 +35,16 @@
         "id": 5,
         "title": "Survey-Form Web Application",
         "description": "Built and deployed a microservices-based survey form application using CI/CD pipeline on AWS EC2.",
-        "client": "Tools: Angular, Springboot, Jenkins, AWS, Kubernetes, Docker, Github",
+        "tools": "Tools: Angular, Springboot, Jenkins, AWS, Kubernetes, Docker, Github",
         "icon": "./form.jpg",
+        "filter": "webapp"
+    },
+    {
+        "id": 6,
+        "title": "React Jobs UI",
+        "description": "Designed an online Job Portal UI using React JS, JSON Server, and Netlify functions.",
+        "tools": "Tools: React, Bootstrap, Tailwind CSS, JSON, Netlify",
+        "icon": "./web2.jpg",
         "filter": "webapp"
     }
 ]

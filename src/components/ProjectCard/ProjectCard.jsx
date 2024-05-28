@@ -50,7 +50,7 @@ const ProjectCard = ({ isHome, activeFilter }) => {
                                     </h5>
                                     <p className="card-text">{project.description}</p>
                                     <p className="card-text">
-                                        <small className="text-muted">{project.client}</small>
+                                        <small className="text-muted">{project.tools}</small>
                                     </p>
                                 </div>
                             </div>

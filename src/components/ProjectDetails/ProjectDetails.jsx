@@ -41,7 +41,9 @@ const Project = ({projectdetails}) => {
                                         {projectdetails?.dataset && (
                                             <li className="mb-2">
                                                 <FaDatabase className='svg-inline fa-fw me-2'/>
-                                                <strong className='me-1'>Dataset:</strong>
+                                                <strong className='me-1'>
+                                                    {projectdetails.industry === "Web Development" ? 'Website:' : 'Dataset:'}
+                                                </strong>
                                                 <Link to={projectdetails.dataset} className='theme-link'>{projectdetails.datasetName}</Link>
                                             </li>
                                         )}

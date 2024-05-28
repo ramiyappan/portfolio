@@ -248,5 +248,38 @@
         "thumb": "./web1.jpg",
         "pic1": "./web3.jpg",
         "pic2": "./laptop2.jpg"
+    },
+    {
+        "id": 6,
+        "title": "React Jobs UI",
+        "intro": "Designed an online Job Portal UI using React JS, JSON Server, and Netlify functions.",
+        "dataset": "https://stupendous-meerkat-014f48.netlify.app/",
+        "datasetName": "React Jobs UI",
+        "overview": "Developed a responsive job portal interface enabling job browsing for developers and job management for employers, leveraging React and Netlify. The application efficiently handles job data and provides a user-friendly experience.",
+        "requirements": [
+            "React JS", 
+            "JSON Server", 
+            "Netlify functions", 
+            "Bootstrap 5 and Tailwind CSS"
+        ],
+        "shortDesc": "This project involved creating a job portal UI with React, JSON Server, and Netlify, providing a dynamic platform for job seekers and employers.",
+        "challenges": [
+            "Implementing and integrating JSON Server for mock backend.",
+            "Configuring Netlify functions to handle JSON requests after deployment.",
+            "Ensuring responsiveness across all media screens using Tailwind CSS and Bootstrap."
+        ],
+        "solution": [
+            "The project began with designing the UI in React JS, utilizing components and hooks for efficient state management and routing. Job opportunities were displayed using cards with a 'read-more' button leading to individual job pages. Developers could browse and view job details, while employers had options to add, modify, or delete jobs.",
+            "Initially, the code structure was tested locally using a mock JSON Server to handle data requests. Necessary changes were made to endpoints in the Vite config, Netlify config, and the Netlify function for smooth data fetching. After local testing, the mock backend was replaced with a Netlify function to manage JSON requests in the deployed application.",
+            "The application was styled using Tailwind CSS and Bootstrap 5 to ensure responsiveness across various devices. Deployment on Netlify included a GitHub trigger for CI/CD, facilitating automatic updates and seamless integration. React-toastify was utilized for interactive notifications, enhancing the user experience."
+        ],
+        "metrics": [],
+        "results": "The job portal UI is fully functional, providing an interactive platform for job seekers and employers. The application is live at https://stupendous-meerkat-014f48.netlify.app/ with efficient data management and responsive design, showcasing the seamless integration of React, Netlify functions, and CSS frameworks.",
+        "industry": "Web Development",
+        "git": "https://github.com/ramiyappan/react-jobs-ui",
+        "thumb": "./web2.jpg",
+        "pic1": "./web4.jpg",
+        "pic2": "./jobs-UI.png"
     }
+    
 ]
