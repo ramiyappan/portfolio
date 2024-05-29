@@ -5,7 +5,7 @@
         "description": "Detect Heart Disease risk in patients using a Logistic Regression ML model developed in Python, to learn from their medical history.",
         "tools": "Tools: Python - ML Libraries",
         "icon": "./heartrate.jpg",
-        "filter": "ml"
+        "filters": ["ml"]
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "description": "Analyze & Identify fraudulent Credit card transactions using Ensemble models & Neural networks in Pytorch. Visualize results using Tableau.",
         "tools": "Tools: Python - PyTorch, ML Libraries",
         "icon": "./creditcard.jpg",
-        "filter": "ml"
+        "filters": ["ml"]
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "description": "Identified hand-written digits from image data using K-Means Clustering and Dimensionality Reduction.",
         "tools": "Tools: Python - ML Libraries",
         "icon": "./numbers.jpg",
-        "filter": "ml"
+        "filters": ["ml"]
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "description": "Predicted controller inputs for an auto-pilot system using Linear Regression with Polynomial features and Regularization.",
         "tools": "Tools: Python - ML Libraries",
         "icon": "./autopilot.jpg",
-        "filter": "ml"
+        "filters": ["ml"]
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "description": "Built and deployed a microservices-based survey form application using CI/CD pipeline on AWS EC2.",
         "tools": "Tools: Angular, Springboot, Jenkins, AWS, Kubernetes, Docker, Github",
         "icon": "./form.jpg",
-        "filter": "webapp"
+        "filters": ["webapp"]
     },
     {
         "id": 6,
@@ -45,6 +45,6 @@
         "description": "Designed an online Job Portal UI using React JS, JSON Server, and Netlify functions.",
         "tools": "Tools: React, Bootstrap, Tailwind CSS, JSON, Netlify",
         "icon": "./web2.jpg",
-        "filter": "webapp"
+        "filters": ["webapp", "frontend"]
     }
 ]

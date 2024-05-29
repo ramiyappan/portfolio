@@ -14,10 +14,12 @@ const ProjectCard = ({ isHome, activeFilter }) => {
         const timer = setTimeout(() => {
             let filteredData;
             if (isHome) {
-                filteredData = projectcards.slice(0, 4);
+                const firstTwo = projectcards.slice(0, 2);
+                const lastTwo = projectcards.slice(-2);
+                filteredData = [...firstTwo, ...lastTwo];
             } else {
                 if (activeFilter !== '*') {
-                    filteredData = projectcards.filter(project => project.filter === activeFilter);
+                    filteredData = projectcards.filter(project => project.filters.includes(activeFilter));
                 } else {
                     filteredData = projectcards;
                 }
