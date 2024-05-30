@@ -46,5 +46,13 @@
         "tools": "Tools: React, Bootstrap, Tailwind CSS, JSON, Netlify",
         "icon": "./web2.jpg",
         "filters": ["webapp", "frontend"]
+    },
+    {
+        "id": 7,
+        "title": "Real Estate Website",
+        "description": "Designed an impressive and responsive real estate website using React, Vite, and Bootstrap 5.",
+        "tools":"Tools: React, Bootstrap",
+        "icon": "",
+        "filters": ["frontend"]
     }
 ]

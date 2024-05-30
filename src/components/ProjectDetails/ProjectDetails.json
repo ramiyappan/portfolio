@@ -47,6 +47,7 @@
         ],
         "results": "The classification error and cross-entropy error on the training data gradually reduced as the number of iterations increased, indicating more effective convergence of gradient descent. However, more iterations also increased runtime. Scaling features helped to cut down the cost and increase the accuracy of the model.",
         "industry": "Health",
+        "filter": "ml",
         "git": "https://github.com/ramiyappan/Heart-disease-Prediction",
         "thumb": "./plan1.jpg",
         "pic1": "./meeting.jpg",
@@ -99,6 +100,7 @@
         ],
         "results": "The Random Forest model, when trained with a combination of RandomOverSampler and RandomUnderSampler, achieved the highest precision (0.942) and AUC-PR (0.884), while XGBoost showed the highest recall (0.888). The project demonstrated that balancing the dataset using sampling techniques significantly improves model performance in detecting fraudulent transactions.",
         "industry": "Financial Services",
+        "filter": "ml",
         "git": "https://github.com/ramiyappan/Credit-card-Fraud",
         "thumb": "./plan.jpg",
         "pic1": "./laptop1.jpg",
@@ -153,6 +155,7 @@
         ],
         "results": "The project demonstrated that t-SNE outperformed PCA in dimensionality reduction for clustering handwritten digits. The K-Means model trained on t-SNE-reduced data achieved a V-Score of 86%, significantly higher than the 51% V-Score from the PCA-based model. This highlights the importance of choosing the right dimensionality reduction technique to improve clustering performance.",
         "industry": "AI/ML",
+        "filter": "ml",
         "git": "https://github.com/ramiyappan/Flowers-digits-prediction",
         "thumb": "./numbers.jpg",
         "pic1": "./laptop.jpg",
@@ -201,6 +204,7 @@
         ],
         "results": "The project demonstrated that regularization significantly improves the model's performance on the test data. While the Polynomial Regression model without regularization had a low training error, it suffered from high test error due to overfitting. Regularization helped mitigate overfitting, resulting in a more balanced performance with a significantly lower test RMSE.",
         "industry": "AI/ML",
+        "filter": "ml",
         "git": "https://github.com/ramiyappan/Autopilot-LinearReg",
         "thumb": "./books.jpg",
         "pic1": "./autopilot.jpg",
@@ -244,6 +248,7 @@
         ],
         "results": "The deployment of the survey application through a streamlined CI/CD pipeline enhanced efficiency, reduced deployment times, and improved the overall user experience. The use of Kubernetes and load balancing ensured the application could handle high traffic effectively, and real-time data storage in AWS RDS was achieved with minimal latency.",
         "industry": "Web Development",
+        "filter": "frontend",
         "git": "https://github.com/ramiyappan/cicd-pipeline",
         "thumb": "./web1.jpg",
         "pic1": "./web3.jpg",
@@ -276,10 +281,44 @@
         "metrics": [],
         "results": "The job portal UI is fully functional, providing an interactive platform for job seekers and employers. The application is live at https://stupendous-meerkat-014f48.netlify.app/ with efficient data management and responsive design, showcasing the seamless integration of React, Netlify functions, and CSS frameworks.",
         "industry": "Web Development",
+        "filter": "frontend",
         "git": "https://github.com/ramiyappan/react-jobs-ui",
         "thumb": "./web2.jpg",
         "pic1": "./web4.jpg",
         "pic2": "./jobs-UI.png"
+    },
+    {
+        "id": 7,
+        "title": "Real Estate Website",
+        "intro": "Designed an impressive and responsive real estate website using React, Vite, and Bootstrap 5.",
+        "dataset": "https://ramiyappan.github.io/real-estate-website/",
+        "datasetName": "Real Estate website",
+        "overview": "The website showcases properties with detailed information and images, offering a seamless browsing experience.",
+        "requirements": [
+            "React",
+            "Vite",
+            "Bootstrap 5"
+        ],
+        "shortDesc": "A responsive and feature-rich real estate website built to provide users with an intuitive platform for browsing property listings.",
+        "challenges": [
+            "Ensuring responsive design across different devices",
+            "Implementing smooth navigation and user interaction",
+            "Handling dynamic data for property listings"
+        ],
+        "solution": [
+            "Developed the front-end using React and Vite for fast and efficient builds, ensuring optimal performance and quick load times.",
+            "Utilized Bootstrap 5 to create a fully responsive design, enabling the website to adapt seamlessly to various screen sizes and devices. This involved using Bootstrap’s grid system and responsive utility classes to achieve a consistent layout.",
+            "Implemented dynamic data handling for property listings, allowing users to view detailed information and images for each property. This was achieved through the use of React state management and hooks (useState, useEffect) to fetch and display data dynamically.",
+            "Added features like search functionality, filters, and interactive maps to enhance the user experience. This required integrating third-party APIs and ensuring smooth interaction between components.",
+            "Deployed the website using GitHub Pages for static content hosting, ensuring easy and reliable access for users. The deployment process involved configuring the Vite build system for optimal performance and integrating with GitHub Actions for CI/CD."
+        ],
+        "metrics": [],
+        "results": "The website provides a user-friendly interface for browsing properties, with a responsive design ensuring optimal performance across all devices.",
+        "industry": "Real Estate",
+        "filter": "frontend",
+        "git": "https://github.com/ramiyappan/real-estate-website",
+        "thumb": "",
+        "pic1": "",
+        "pic2": ""
     }
-    
 ]
