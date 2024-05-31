@@ -52,7 +52,7 @@
         "title": "Real Estate Website",
         "description": "Designed an impressive and responsive real estate website using React, Vite, and Bootstrap 5.",
         "tools":"Tools: React, Bootstrap",
-        "icon": "",
+        "icon": "./web5.jpg",
         "filters": ["frontend"]
     }
 ]

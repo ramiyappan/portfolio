@@ -290,13 +290,12 @@
     {
         "id": 7,
         "title": "Real Estate Website",
-        "intro": "Designed an impressive and responsive real estate website using React, Vite, and Bootstrap 5.",
+        "intro": "Designed an impressive and responsive real estate website using React, Vite, & Bootstrap 5.",
         "dataset": "https://ramiyappan.github.io/real-estate-website/",
-        "datasetName": "Real Estate website",
+        "datasetName": "Deployed website",
         "overview": "The website showcases properties with detailed information and images, offering a seamless browsing experience.",
         "requirements": [
-            "React",
-            "Vite",
+            "React and vite",
             "Bootstrap 5"
         ],
         "shortDesc": "A responsive and feature-rich real estate website built to provide users with an intuitive platform for browsing property listings.",
@@ -306,10 +305,8 @@
             "Handling dynamic data for property listings"
         ],
         "solution": [
-            "Developed the front-end using React and Vite for fast and efficient builds, ensuring optimal performance and quick load times.",
-            "Utilized Bootstrap 5 to create a fully responsive design, enabling the website to adapt seamlessly to various screen sizes and devices. This involved using Bootstrap’s grid system and responsive utility classes to achieve a consistent layout.",
-            "Implemented dynamic data handling for property listings, allowing users to view detailed information and images for each property. This was achieved through the use of React state management and hooks (useState, useEffect) to fetch and display data dynamically.",
-            "Added features like search functionality, filters, and interactive maps to enhance the user experience. This required integrating third-party APIs and ensuring smooth interaction between components.",
+            "Developed the front-end using React and Vite for fast and efficient builds, ensuring optimal performance and quick load times. Utilized Bootstrap 5 to create a fully responsive design, enabling the website to adapt seamlessly to various screen sizes and devices. This involved using Bootstrap’s grid system and responsive utility classes to achieve a consistent layout.",
+            "Implemented dynamic data handling for property listings, allowing users to view detailed information and images for each property. This was achieved through the use of React state management and hooks (useState, useEffect) to fetch and display data dynamically. Added features like search functionality, filters, and interactive maps to enhance the user experience. This required integrating third-party APIs and ensuring smooth interaction between components.",
             "Deployed the website using GitHub Pages for static content hosting, ensuring easy and reliable access for users. The deployment process involved configuring the Vite build system for optimal performance and integrating with GitHub Actions for CI/CD."
         ],
         "metrics": [],
@@ -317,8 +314,8 @@
         "industry": "Real Estate",
         "filter": "frontend",
         "git": "https://github.com/ramiyappan/real-estate-website",
-        "thumb": "",
-        "pic1": "",
-        "pic2": ""
+        "thumb": "./web5.jpg",
+        "pic1": "./write.jpg",
+        "pic2": "./board4.jpg"
     }
 ]
