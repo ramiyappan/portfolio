@@ -317,5 +317,50 @@
         "thumb": "./web5.jpg",
         "pic1": "./write.jpg",
         "pic2": "./board4.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Movies App",
+        "intro": "A simple React application for browsing movies from a public API.",
+        "dataset": "https://ramiyappan.github.io/movie-app/",
+        "datasetName": "Movies App",
+        "overview": "The Movies App is a front-end application built using React, designed to allow users to browse and search for movies. The application fetches movie data from a public API and displays it in an organized and visually appealing manner. The app's structure leverages React's component-based architecture and hooks for state management and side effects, ensuring a smooth and dynamic user experience.",
+        "requirements": [
+            "React - HTML/CSS/JS",
+            "Public Movie API"
+        ],
+        "shortDesc": "A front-end application built with React, enabling users to browse and search for movies using data from a public API.",
+        "challenges": [
+            "Handling asynchronous API calls",
+            "Managing state and props for dynamic data rendering",
+            "Ensuring responsive design and user-friendly interface"
+        ],
+        "solution": [
+            "Developed the application using React, focusing on core concepts such as components, state, and props to ensure modular and maintainable code. Implemented Hooks like useState and useEffect to manage state and handle side effects, particularly for fetching and displaying movie data from the API. Structured the application into reusable components to efficiently manage different parts of the UI, such as movie lists, search bar, and movie details.",
+            "Styled the application using modern CSS frameworks to ensure a responsive and visually appealing design across various devices and screen sizes. Configured the project for deployment on GitHub Pages, ensuring easy access and reliable hosting of the application."
+        ],
+        "metrics": [
+            {
+                "name": "API response time",
+                "data": "< 500",
+                "unit": "ms",
+                "desc": "API response time optimized to under 500ms for a smooth user experience."
+            },
+            {
+                "name": "Responsiveness",
+                "data": "100",
+                "unit": "%",
+                "desc": "Achieved 100% responsiveness across various devices and screen sizes."
+            }
+            
+        ],
+        "results": "The Movies App provides a seamless and responsive platform for users to browse and search for movies, leveraging React's core features for efficient and maintainable development.",
+        "industry": "Entertainment",
+        "filter": "frontend",
+        "git": "https://github.com/ramiyappan/movie-app",
+        "thumb": "./netflix.jpg",
+        "pic1": "./tv.jpg",
+        "pic2": "./movies.png"
     }
+    
 ]

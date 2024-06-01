@@ -51,8 +51,16 @@
         "id": 7,
         "title": "Real Estate Website",
         "description": "Designed an impressive and responsive real estate website using React, Vite, and Bootstrap 5.",
-        "tools":"Tools: React, Bootstrap",
+        "tools": "Tools: React, Bootstrap",
         "icon": "./web5.jpg",
+        "filters": ["frontend"]
+    },
+    {
+        "id": 8,
+        "title": "Movies App",
+        "description": "A React front-end application that enables users to browse and search movies using data from a public API.",
+        "tools": "Tools: React, Bootstrap",
+        "icon": "./netflix.jpg",
         "filters": ["frontend"]
     }
 ]
