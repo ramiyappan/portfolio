@@ -11,6 +11,7 @@ import { IoLogoJavascript, IoLogoTableau } from "react-icons/io5";
 import { SiMysql, SiKubernetes, SiMicrosoftexcel, SiTailwindcss } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import ProjectCard from '../ProjectCard/ProjectCard';
+import Certifications from '../Certifications/Certifications';
 
 const AboutMe = () => {
 
@@ -155,6 +156,8 @@ const AboutMe = () => {
             <div className="container">
                 <hr />
             </div>
+
+            <Certifications />
         </>
     )
 }
