@@ -1,8 +1,22 @@
 [
     {
+        "title": "Google Data Analytics Professional",
+        "expiry": "-",
+        "desc": "Focuses on data preparation, processing, and visualization with SQL and R, enabling extraction of actionable insights for data-driven decision-making.",
+        "link": "https://www.coursera.org/google-certificates/data-analytics-certificate?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER_google-data-analytics_google_FTCOF_professional-certificates_country-US&campaignid=12504215975&adgroupid=122709142687&device=c&keyword=google%20analytics%20certification%20free&matchtype=b&network=g&devicemodel=&adposition=&creativeid=696354661336&hide_mobile_promo&gad_source=1&gclid=CjwKCAjwjeuyBhBuEiwAJ3vuoWs7Ysvs1RTGCikhctQzxMjHwIChqj6kRTm8hAsT9rKHxkJL327jQxoC9S0QAvD_BwE",
+        "img": "https://images.credly.com/size/680x680/images/d41de2b7-cbc2-47ec-bcf1-ebecbe83872f/GCC_badge_DA_1000x1000.png"
+    },
+    {
+        "title": "IBM Data Science Professional",
+        "expiry": "-",
+        "desc": "Covers data analysis, visualization, and machine learning with Python, SQL, and R, emphasizing data manipulation, statistical analysis, and model development.",
+        "link": "https://www.coursera.org/professional-certificates/ibm-data-science?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER_ibm-data-science_ibm_FTCOF_professional-certificates_country-US-country-CA&campaignid=1876641588&adgroupid=70740725700&device=c&keyword=ibm%20data%20science%20professional%20certificate&matchtype=b&network=g&devicemodel=&adposition=&creativeid=634520636552&hide_mobile_promo&gad_source=1&gclid=CjwKCAjwjeuyBhBuEiwAJ3vuoRctQvtS9gm-75l-SF2_iY20J8ticZHDY5Sx3PQJecBsU6IvqpQyuRoCFQMQAvD_BwE",
+        "img": "https://images.credly.com/size/680x680/images/b47e9b58-7f54-4981-b156-5e7d354c8215/Professional_Certificate_-_Data_Science.png"
+    },
+    {
         "title": "AWS Certified Developer Associate",
         "expiry": "Jan 31, 2027",
-        "desc": "Certifies skills in developing and maintaining applications on AWS, with a focus on core services and best practices for AWS architecture.",
+        "desc": "Certifies skills in developing and maintaining applications on AWS, emphasizing proficiency in serverless application development, AWS Lambda, DynamoDB, and API integrations.",
         "link": "https://aws.amazon.com/certification/certified-developer-associate/",
         "img": "https://images.credly.com/size/680x680/images/b9feab85-1a43-4f6c-99a5-631b88d5461b/image.png"
     },
@@ -19,19 +33,5 @@
         "desc": "Validates foundational knowledge of AWS Cloud and core services, including security, networking, and cloud economics.",
         "link": "https://aws.amazon.com/certification/certified-cloud-practitioner/",
         "img": "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
-    },
-    {
-        "title": "IBM Data Science Professional",
-        "expiry": "",
-        "desc": "Covers essential data science skills, including data analysis, visualization, and machine learning, using tools like Python, SQL, and R.",
-        "link": "https://www.coursera.org/professional-certificates/ibm-data-science?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER_ibm-data-science_ibm_FTCOF_professional-certificates_country-US-country-CA&campaignid=1876641588&adgroupid=70740725700&device=c&keyword=ibm%20data%20science%20professional%20certificate&matchtype=b&network=g&devicemodel=&adposition=&creativeid=634520636552&hide_mobile_promo&gad_source=1&gclid=CjwKCAjwjeuyBhBuEiwAJ3vuoRctQvtS9gm-75l-SF2_iY20J8ticZHDY5Sx3PQJecBsU6IvqpQyuRoCFQMQAvD_BwE",
-        "img": "https://images.credly.com/size/680x680/images/b47e9b58-7f54-4981-b156-5e7d354c8215/Professional_Certificate_-_Data_Science.png"
-    },
-    {
-        "title": "Google Data Analytics Professional",
-        "expiry": "",
-        "desc": "Equips learners with data analysis skills, focusing on data preparation, processing, and visualization using tools like SQL and R.",
-        "link": "https://www.coursera.org/google-certificates/data-analytics-certificate?utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER_google-data-analytics_google_FTCOF_professional-certificates_country-US&campaignid=12504215975&adgroupid=122709142687&device=c&keyword=google%20analytics%20certification%20free&matchtype=b&network=g&devicemodel=&adposition=&creativeid=696354661336&hide_mobile_promo&gad_source=1&gclid=CjwKCAjwjeuyBhBuEiwAJ3vuoWs7Ysvs1RTGCikhctQzxMjHwIChqj6kRTm8hAsT9rKHxkJL327jQxoC9S0QAvD_BwE",
-        "img": "https://images.credly.com/size/680x680/images/d41de2b7-cbc2-47ec-bcf1-ebecbe83872f/GCC_badge_DA_1000x1000.png"
     }
 ]

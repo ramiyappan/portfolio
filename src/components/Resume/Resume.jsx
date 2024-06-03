@@ -56,7 +56,7 @@ const Resume = () => {
                                     </li>
                                     <li className="mb-2">
                                         <FaGlobe className='fa-fw fa-lg me-2'/>
-                                        <a href="/" className="resume-link">www.personalbio.com</a>
+                                        <a href="/" className="resume-link">ramiyappan.github.io</a>
                                     </li>
                                     <li className="mb-0">
                                         <FaLocationDot className='fa-fw fa-lg me-2'/>

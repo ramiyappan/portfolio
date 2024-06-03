@@ -136,6 +136,12 @@ const AboutMe = () => {
             <div className="container">
                 <hr />
             </div>
+
+            <Certifications />
+
+            <div className="container">
+                <hr />
+            </div>
             
             {/* Featured Projects */}
             <section className="featured-section p-3 p-lg-5">
@@ -153,11 +159,6 @@ const AboutMe = () => {
                 </div>
             </section>
 
-            <div className="container">
-                <hr />
-            </div>
-
-            <Certifications />
         </>
     )
 }

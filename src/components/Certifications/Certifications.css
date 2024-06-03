@@ -1,7 +1,7 @@
 .cert-card {
     background: #fafafa;
     border: 1px solid rgba(0, 0, 0, 0.025);
-    height: 100%;
+    height: 400px;
     border-radius: 0;
 }
 
@@ -24,3 +24,24 @@
     object-fit: contain;
 }
 
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(41, 41, 41, 0.3);
+    border: none;
+}
+
+.carousel-indicators .active {
+    background-color: #292929;
+    border: none;
+}
+
+/* Ensure the carousel fills the available width */
+.carousel-item .row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Make sure the images do not exceed the card width */
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
