@@ -64,6 +64,9 @@
     .project-card .card-img-holder{
         height: auto;
         max-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .project-card .card-img{
