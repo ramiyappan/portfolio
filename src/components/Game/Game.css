@@ -1,9 +1,8 @@
-
 .board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-    max-width: 340px;  /* Adjusted to fit the cells correctly */
+    max-width: 340px; 
     margin: auto;
     border: 3px solid #343a40;
     border-radius: 10px;
@@ -11,104 +10,104 @@
     background-color: #f8f9fa;
 }
 
-    .cell {
-        width: 100px;
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        font-weight: bold;
-        background-color: #e9ecef;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        border: 2px solid #343a40;
-    }
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #e9ecef;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid #343a40;
+}
 
-    .cell:hover {
-        background-color: #dee2e6;
-    }
+.cell:hover {
+    background-color: #dee2e6;
+}
 
-    .cell:active {
-        background-color: #ced4da;
-    }
+.cell:active {
+    background-color: #ced4da;
+}
 
-    .config-panel.config-panel-open {
-        right: 0;
-    }
+.config-panel.config-panel-open {
+    right: 0;
+}
 
-    .config-panel.config-panel-hide {
-        right: -190px;
-    }
+.config-panel.config-panel-hide {
+    right: -190px;
+}
 
-    .config-panel .panel-inner {
-        position: relative;
-        background: #223142;
-        color: #fff;
-        padding: 15px;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-    }
+.config-panel .panel-inner {
+    position: relative;
+    background: #223142;
+    color: #fff;
+    padding: 15px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
-    .config-panel {
-        position: fixed;
-        top: 50px;
-        z-index: 30;
-        width: 190px;
-        transition: all 0.4s ease-in-out;
-    }
+.config-panel {
+    position: fixed;
+    top: 50px;
+    z-index: 30;
+    width: 190px;
+    transition: all 0.4s ease-in-out;
+}
 
-    .config-trigger:hover {
-        background: #111820;
-        text-decoration: none;
-    }
+.config-trigger:hover {
+    background: #111820;
+    text-decoration: none;
+}
 
-    .config-trigger {
-        position: absolute;
-        top: 30px;
-        left: -36px;
-        width: 36px;
-        height: 36px;
-        background: #223142;
-        color: #fff;
-        text-align: center;
-        border-radius: 4px;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        text-decoration: none;
-    }
+.config-trigger {
+    position: absolute;
+    top: 30px;
+    left: -36px;
+    width: 36px;
+    height: 36px;
+    background: #223142;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    text-decoration: none;
+}
 
-    .config-panel .panel-title {
-        font-weight: 600;
-        margin-bottom: 10px;
-        font-size: 14px;
-        text-transform: uppercase;
-        color: #fff;
-    }
+.config-panel .panel-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
 
-    .config-panel .close {
-        position: absolute;
-        right: 5px;
-        top: 5px;
-        color: #fff;
-    }
+.config-panel .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #fff;
+}
 
-    .config-trigger .fa-gear {
-        margin-top: 0.4rem;
-        font-size: 1.45rem;
-        display: block;
-        color: #fff;
-    }
+.config-trigger .fa-gear {
+    margin-top: 0.4rem;
+    font-size: 1.45rem;
+    display: block;
+    color: #fff;
+}
 
-    .config-trigger:hover .fa-gear {
-        color: #fff;
-    }
+.config-trigger:hover .fa-gear {
+    color: #fff;
+}
 
-    .panel-body a{ 
-        text-decoration: underline;
-        text-decoration-color: rgba(189, 189, 189, 0.3);
-    }
+.panel-body a{ 
+    text-decoration: underline;
+    text-decoration-color: rgba(189, 189, 189, 0.3);
+}
 
 

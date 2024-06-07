@@ -30,6 +30,8 @@ const Certifications = () => {
             <div className="container">
                 <h2 className="section-title fw-bold mb-5">Certifications</h2>
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+
+                    {/* slide indicator */}
                     <div className="carousel-indicators">
                         {groupedCertifications.map((_, index) => (
                             <button
@@ -43,6 +45,8 @@ const Certifications = () => {
                             ></button>
                         ))}
                     </div>
+
+                    {/* Inner content */}
                     <div className="carousel-inner">
                         {groupedCertifications.map((group, index) => (
                             <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>

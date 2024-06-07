@@ -34,13 +34,11 @@
     border: none;
 }
 
-/* Ensure the carousel fills the available width */
 .carousel-item .row {
     display: flex;
     justify-content: center;
 }
 
-/* Make sure the images do not exceed the card width */
 .card-img-top {
     width: 100%;
     height: auto;

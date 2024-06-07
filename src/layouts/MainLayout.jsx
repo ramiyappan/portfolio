@@ -7,16 +7,18 @@ import Footer from '../components/Footer/Footer'
 import GameConfig from '../components/Game/GameConfig.jsx';
 
 const MainLayout = ({location}) => {
+    // hide footer for a few pages
     const hideFooter = location.pathname === '/contact' || location.pathname === '/portfolio';
 
     return (
         <>
             <SideBar />
+
             <div className="content-section p-0">
-                <GameConfig />
-                <Outlet />
+                <GameConfig /> {/* Side panel to direct to game page */}
+                <Outlet /> {/* Everything else inside MainLayout route */}
                 {!hideFooter && <Footer />}
-                <ToastContainer />
+                <ToastContainer /> {/* to display toast notifications */}
             </div>
         </>
     )

@@ -8,7 +8,6 @@ import data from './Projectinfo.json'
 const Resume = () => {
 
     const handleDownloadPDF = () => {
-        // Replace 'your-pdf-file.pdf' with the path to your PDF file
         const pdfFilePath = './Data_Analyst_Resume.pdf';
         const link = document.createElement('a');
         link.href = pdfFilePath;
@@ -56,7 +55,7 @@ const Resume = () => {
                                     </li>
                                     <li className="mb-2">
                                         <FaGlobe className='fa-fw fa-lg me-2'/>
-                                        <a href="/" className="resume-link">ramiyappan.github.io</a>
+                                        <a href="https://ramiyappan.github.io/portfolio" className="resume-link">ramiyappan.github.io</a>
                                     </li>
                                     <li className="mb-0">
                                         <FaLocationDot className='fa-fw fa-lg me-2'/>

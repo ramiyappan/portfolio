@@ -1,16 +1,17 @@
 import React, { useRef } from 'react'
-import {FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube} from 'react-icons/fa6'
+import { FaInstagram, FaLinkedinIn, FaTwitter, FaYoutube } from 'react-icons/fa6'
 import { BsGithub } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
-import './Contact.css'
 import { SiLeetcode } from 'react-icons/si'
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify'
+import './Contact.css'
 
 const Contact = () => {
 
     const form = useRef();
 
+    // function to send email
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -33,6 +34,7 @@ const Contact = () => {
     
     return (
         <>
+            {/* Header */}
             <section className="bg-light py-5">
                 <div className="container text-center single-col-max-width">
                     <h2 className="fw-bold fs-2">Contact</h2>
@@ -82,6 +84,7 @@ const Contact = () => {
                 </div>
             </section>
 
+            {/* Contact form */}
             <section className="contact-section px-3 py-5 p-md-5">
                 <div className="container">
                     <form id="contact-form" ref={form} className="contact-form col-lg-8 mx-lg-auto" onSubmit={sendEmail}>

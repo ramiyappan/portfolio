@@ -10,6 +10,7 @@ const GameConfig = () => {
     const [showConfig, setShowConfig] = useState(false);
 
     return (
+        // right side panel display to direct to the game page in larger screens.
         <div id="config-panel" className={`config-panel d-none d-lg-block ${showConfig ? 'config-panel-open' : 'config-panel-hide'}`}>
             <div className="panel-inner">
                 <Link 

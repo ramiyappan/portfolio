@@ -3,6 +3,7 @@ import './Game.css'
 
 const initialBoard = Array(9).fill(null);
 
+// Winner function
 const calculateWinner = (board) => {
     const lines = [
         [0, 1, 2],
@@ -65,6 +66,7 @@ const minimax = (board, depth, isMax) => {
     }
 };
 
+// Best move function
 const findBestMove = (board) => {
     let bestVal = -1000;
     let bestMove = -1;
@@ -120,6 +122,8 @@ const TicTacToe = () => {
     return (
         <div className="container mt-5">
             <h1 className="text-center">Tic Tac Toe</h1>
+            
+            {/* Board */}
             <div className="row justify-content-center">
                 <div className="col-auto">
                     <div className="board">
@@ -135,8 +139,12 @@ const TicTacToe = () => {
                     </div>
                 </div>
             </div>
+
+            {/* Result */}
             {winner && <h2 className="text-center mt-3">Winner: {winner}</h2>}
             {!winner && !isMovesLeft(board) && <h2 className="text-center mt-3">It's a Draw!</h2>}
+
+            {/* Reset */}
             <div className="text-center mt-3 mb-5">
                 <button className="btn btn-primary" onClick={resetGame}>Reset</button>
             </div>

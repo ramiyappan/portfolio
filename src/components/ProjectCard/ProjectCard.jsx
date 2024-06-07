@@ -57,6 +57,8 @@ const ProjectCard = ({ isHome, activeFilter }) => {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Mask on Hover */}
                         <div className="link-mask">
                             <Link className="link-mask-link"></Link>
                             <div className="link-mask-text">

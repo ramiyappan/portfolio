@@ -13,18 +13,6 @@ import '../../App.css'
 const SideBar = () => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth > 768 ? true : false);
 
-    // useEffect(() => {
-    //     const handleResize = () => {
-    //         setIsSidebarOpen(window.innerWidth > 768);
-    //     };
-
-    //     window.addEventListener('resize', handleResize);
-
-    //     return () => {
-    //         window.removeEventListener('resize', handleResize);
-    //     };
-    // }, []);
-
     useEffect(() => {
         if (isSidebarOpen && window.innerWidth < 768) {
             window.scrollTo(0, 0);
