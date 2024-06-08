@@ -11,8 +11,9 @@ import ResumePage from './pages/ResumePage'
 import ContactPage from './pages/ContactPage'
 import AboutPage from './pages/AboutPage';
 import ProjectPage from './pages/ProjectPage';
-import ProjectDetails from './components/ProjectDetails/ProjectDetails.json'
-import Game from './components/Game/Game'
+import ProjectDetails from './components/ProjectDetails/ProjectDetails.json';
+import Game from './components/Game/Game';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => {
   const location = useLocation();
@@ -37,6 +38,7 @@ const App = () => {
                 ))}
               </Route>
               <Route path="/game" element={<Game />}/>
+              <Route path='*' element={<NotFoundPage />} />
             </Route>
           </Routes>
         </div>

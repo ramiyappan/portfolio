@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <section className="promo-section bg-light py-5 text-center">
+        <section className="promo-section bg-light py-5 text-center bottom-0">
             <div className="container single-col-max-width">
                 <h2 className="title">Need help with your project?</h2>
                 <p>
