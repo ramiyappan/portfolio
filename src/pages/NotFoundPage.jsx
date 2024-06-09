@@ -4,6 +4,7 @@ import { FaExclamationTriangle } from 'react-icons/fa'
 
 const NotFoundPage = () => {
     return (
+        // NotFound section
         <section className="error-section bg-light py-5 mb-5">
             <div className="container text-center single-col-max-width">
                 <FaExclamationTriangle className='fs-1 mb-3'/>

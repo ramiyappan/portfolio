@@ -74,6 +74,15 @@ a{
   outline: none;
 }
 
+.btn-primary {
+  color: white;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  --bs-btn-hover-color: white;
+  --bs-btn-hover-bg: #ae9b45;
+  --bs-btn-hover-border-color: #ae9b45;
+}
+
 .svg-inline{
   height: 1em;
   vertical-align: -.125em;
@@ -103,18 +112,4 @@ a{
 
 .fa-2x {
   font-size: 2em;
-}
-
-h3{
-  font-weight: bold;
-  margin-top: 0;
-}
-
-.btn-primary {
-  color: white;
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  --bs-btn-hover-color: white;
-  --bs-btn-hover-bg: #ae9b45;
-  --bs-btn-hover-border-color: #ae9b45;
 }
