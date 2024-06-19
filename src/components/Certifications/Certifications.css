@@ -9,6 +9,10 @@
     font-size: 1.125rem;
 }
 
+.cert-card .card-title .theme-link:hover {
+    color: var(--hover-color);
+}
+
 .cert-card .card-text {
     font-size: 0.875rem;
 }
