@@ -4,6 +4,7 @@ import './Blog.css'
 const Blog = () => {
     return (
         <>
+            {/* Header section */}
             <section className="cta-section bg-light py-5">
                 <div className="container text-center">
                     <h2 className="heading">A Blog about Software Development and Life</h2>
