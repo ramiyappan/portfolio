@@ -32,6 +32,7 @@ const Blog = () => {
             <section className="blog-list px-3 py-5 p-md-5">
                 <div className="container">
                     <div className="row">
+                        
                         <div className="col-md-4 mb-3">
                             <div className="card blog-post-card">
                                 <img src="" alt="" className="card-img-top" />
@@ -43,10 +44,11 @@ const Blog = () => {
                                     </p>
                                 </div>
                                 <div className="card-footer">
-
+                                    <small className="text-muted">Published 2 days ago</small>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
