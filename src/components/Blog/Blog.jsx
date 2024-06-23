@@ -32,12 +32,14 @@ const Blog = () => {
             <section className="blog-list px-3 py-5 p-md-5">
                 <div className="container">
                     <div className="row">
-                        
+
                         <div className="col-md-4 mb-3">
                             <div className="card blog-post-card">
                                 <img src="" alt="" className="card-img-top" />
                                 <div className="card-body">
-                                    <h5 className="card-title">data.title</h5>
+                                    <h5 className="card-title">
+                                        data.title
+                                    </h5>
                                     <p className="card-text"></p>
                                     <p className="mb-0">
                                         <a href="" className="text-link">Read more</a>
