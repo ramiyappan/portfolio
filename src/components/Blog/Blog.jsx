@@ -28,6 +28,12 @@ const Blog = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="blog-list px-3 py-5 p-md-5">
+                <div className="container">
+                    
+                </div>
+            </section>
         </>
     )
 }
