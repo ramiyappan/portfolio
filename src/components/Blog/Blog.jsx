@@ -38,7 +38,7 @@ const Blog = () => {
                                 <img src="" alt="" className="card-img-top" />
                                 <div className="card-body">
                                     <h5 className="card-title">
-                                        data.title
+                                        <a href="" className="theme-link">data.title</a>
                                     </h5>
                                     <p className="card-text"></p>
                                     <p className="mb-0">
