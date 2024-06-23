@@ -31,7 +31,11 @@ const Blog = () => {
 
             <section className="blog-list px-3 py-5 p-md-5">
                 <div className="container">
-                    
+                    <div className="row">
+                        <div className="col-md-4 mb-3">
+                            
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
