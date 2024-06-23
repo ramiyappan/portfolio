@@ -33,7 +33,15 @@ const Blog = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-4 mb-3">
-                            
+                            <div className="card blog-post-card">
+                                <img src="" alt="" className="card-img-top" />
+                                <div className="card-body">
+
+                                </div>
+                                <div className="card-footer">
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
