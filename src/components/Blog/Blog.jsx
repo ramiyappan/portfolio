@@ -36,10 +36,14 @@ const Blog = () => {
                             <div className="card blog-post-card">
                                 <img src="" alt="" className="card-img-top" />
                                 <div className="card-body">
-
+                                    <h5 className="card-title">data.title</h5>
+                                    <p className="card-text"></p>
+                                    <p className="mb-0">
+                                        <a href="" className="text-link">Read more</a>
+                                    </p>
                                 </div>
                                 <div className="card-footer">
-                                    
+
                                 </div>
                             </div>
                         </div>
