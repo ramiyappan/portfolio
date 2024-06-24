@@ -29,6 +29,7 @@ const Blog = () => {
                 </div>
             </section>
 
+            {/* Blog cards */}
             <section className="blog-list px-3 py-5 p-md-5">
                 <div className="container">
                     <div className="row">
