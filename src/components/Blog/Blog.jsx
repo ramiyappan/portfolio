@@ -53,6 +53,10 @@ const Blog = () => {
                         </div>
 
                     </div>
+
+                    <nav className="blog-nav nav nav-justified my-5">
+                        
+                    </nav>
                 </div>
             </section>
         </>
