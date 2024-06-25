@@ -1,5 +1,6 @@
 import React from 'react'
 import './Blog.css'
+import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
 const Blog = () => {
     return (
@@ -57,6 +58,7 @@ const Blog = () => {
                     <nav className="blog-nav nav nav-justified my-5">
                         <Link className="nav-link-prev nav-item nav-link d-none rounded-left">
                             Previous
+                            <FaLongArrowAltLeft className='svg-inline arrow-prev' />
                         </Link>
                         <Link className="nav-link-next nav-item nav-link rounded">
                             Next
