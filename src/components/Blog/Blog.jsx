@@ -35,6 +35,7 @@ const Blog = () => {
                 <div className="container">
                     <div className="row">
 
+                        {/* Card */}
                         <div className="col-md-4 mb-3">
                             <div className="card blog-post-card">
                                 <img src="" alt="" className="card-img-top" />
@@ -65,6 +66,7 @@ const Blog = () => {
                             <FaLongArrowAltRight className='svg-inline arrow-next' />
                         </Link>
                     </nav>
+
                 </div>
             </section>
         </>
