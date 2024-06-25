@@ -1,5 +1,6 @@
 import React from 'react'
 import './Blog.css'
+import './Blogs.json'
 import { FaLongArrowAltLeft, FaLongArrowAltRight } from "react-icons/fa";
 
 const Blog = () => {
