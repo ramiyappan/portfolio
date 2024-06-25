@@ -62,6 +62,7 @@ const Blog = () => {
                         </Link>
                         <Link className="nav-link-next nav-item nav-link rounded">
                             Next
+                            <FaLongArrowAltRight className='svg-inline arrow-next' />
                         </Link>
                     </nav>
                 </div>
