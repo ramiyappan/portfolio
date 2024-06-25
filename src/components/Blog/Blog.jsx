@@ -58,7 +58,9 @@ const Blog = () => {
                         <Link className="nav-link-prev nav-item nav-link d-none rounded-left">
                             Previous
                         </Link>
-
+                        <Link className="nav-link-next nav-item nav-link rounded">
+                            Next
+                        </Link>
                     </nav>
                 </div>
             </section>
