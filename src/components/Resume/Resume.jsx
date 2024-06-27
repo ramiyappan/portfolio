@@ -240,9 +240,9 @@ const Resume = () => {
                                 </Link>
                             </li>
                             <li className="list-inline-item mb-lg-0 me-lg-3">
-                                <Link className="resume-link" to="https://instagram.com/ram_iyappan">
+                                <Link className="resume-link" to="https://instagram.com/pianist_ram">
                                     <FaInstagramSquare className='svg-inline fa-2x me-2'/>
-                                    <span className="d-none d-lg-inline-block text-muted">@ram_iyappan</span>
+                                    <span className="d-none d-lg-inline-block text-muted">@pianist_ram</span>
                                 </Link>
                             </li>
                         </ul>

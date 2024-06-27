@@ -60,7 +60,7 @@ const Contact = () => {
                                 </Link>
                             </li>
                             <li className="list-inline-item mb-3">
-                                <Link to="https://www.instagram.com/ram_iyappan">
+                                <Link to="https://www.instagram.com/pianist_ram">
                                     <FaInstagram className='icon svg-inline fa-fw fa-lg'/>
                                 </Link>
                             </li>
