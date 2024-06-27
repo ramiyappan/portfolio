@@ -110,7 +110,7 @@
         "id": 3,
         "title": "Hand-written digits Prediction",
         "intro": "Identified hand-written digits from image data using K-Means Clustering and Dimensionality Reduction.",
-        "dataset": "https://github.com/ramiyappan/Flowers-digits-prediction/blob/main/Image/image_test.txt",
+        "dataset": "https://github.com/ramiyappan/Kmeans-scratch/blob/main/Image/image_test.txt",
         "datasetName": "MNIST Database",
         "overview": "This project aims to classify handwritten digits (0-9) using K-Means Clustering on image data. The dataset consists of 10,000 images, each represented as a 28x28 matrix of pixel values, flattened into 1x784 vectors. Without labels, the task involves clustering the images into 10 groups corresponding to the digits.",
         "requirements": [
@@ -156,7 +156,7 @@
         "results": "The project demonstrated that t-SNE outperformed PCA in dimensionality reduction for clustering handwritten digits. The K-Means model trained on t-SNE-reduced data achieved a V-Score of 86%, significantly higher than the 51% V-Score from the PCA-based model. This highlights the importance of choosing the right dimensionality reduction technique to improve clustering performance.",
         "industry": "AI/ML",
         "filter": "ml",
-        "git": "https://github.com/ramiyappan/Flowers-digits-prediction",
+        "git": "https://github.com/ramiyappan/Kmeans-scratch",
         "thumb": "./numbers.jpg",
         "pic1": "./laptop.jpg",
         "pic2": "./board.jpg"
