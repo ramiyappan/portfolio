@@ -22,7 +22,7 @@ const AboutMe = () => {
                             <div className="col-12">
                                 <p className='greytext'>
                                     Welcome to my digital hub! As a recent Computer Science graduate from George Mason University, 
-                                    Virginia, I specialize in Data Analysis, Machine Learning, and Full-Stack development. 
+                                    Virginia, I specialize in Full-Stack development, Data Analysis, and Machine Learning,. 
                                     Curious how I can elevate your project? Explore my portfolio and resume!
                                 </p>
                             </div>
