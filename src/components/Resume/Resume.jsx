@@ -99,11 +99,36 @@ const Resume = () => {
                             {/* Left side */}
                             <div className="resume-main col-12 col-lg-8 col-xl-9 pe-0 pe-lg-5">
 
-                                {/* Work Experience */}
+                                {/* Work Experiences */}
                                 <section className="work-section py-3">
                                     <h3 className="text-uppercase resume-section-heading mb-4">
                                         Work Experiences
                                     </h3>
+                                    <div className="item mb-3">
+                                        <div className="item-heading row align-items-center mb-2">
+                                            <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                                                Data Science Intern
+                                            </h4>
+                                            <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                                                US LBM | Jan 2023 - Dec 2023
+                                            </div>
+                                        </div>
+                                        <div className="item-content">
+                                            <p>
+                                                Developed demand forecasting models for a leading national distributor, 
+                                                achieving a MAPE of less than 20% for over 70% of SKUs using a Stacking Ensemble approach.
+                                            </p>
+                                            <ul className="resume-list">
+                                                <li>Employed advanced time series forecasting methods, including ARIMA, XGBoost, and Auto Deep AR, to forecast
+                                                sales up to 1 month ahead at various granularity levels.</li>
+                                                <li>Utilized Snowflake for data processing, reducing the data preparation time by 30%.</li>
+                                                <li>Implemented clustering techniques to improve modelling time for per-instance based models and improve MAPE for
+                                                neural network-based forecasts.</li>
+                                                <li>Presented forecasting results to stakeholders using Tableau, enabling clear and actionable insights for demand
+                                                planning and supply chain optimization.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div className="item mb-3">
                                         <div className="item-heading row align-items-center mb-2">
                                             <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
@@ -117,7 +142,7 @@ const Resume = () => {
                                             <p>
                                                 Instructed & facilitated the Principles of Computing course, 
                                                 conducted weekly office hours, assessed assignments, and provided 
-                                                personalized support to over 60 students for enhanced performance.
+                                                personalized support to over 90 students for enhanced performance.
                                             </p>
                                         </div>
                                     </div>

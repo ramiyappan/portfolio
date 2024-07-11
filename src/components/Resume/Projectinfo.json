@@ -9,13 +9,8 @@
         ]
     },
     {
-        "title": "MNIST Digits Classification",
-        "date": "Dec 2022",
-        "description": "Achieved state-of-the-art accuracy (98%) on the MNIST handwritten digits dataset using Neural Networks. Reduced validation loss by 16% through mini-batch training and hyperparameter tuning."
-    },
-    {
         "title": "Hand-written digits Prediction",
-        "date": "Nov 22",
+        "date": "Nov 2022",
         "description": "Built a K-Means clustering model with t-SNE visualization, achieving an accuracy of 0.86. Analyzed high-dimensional digit features and reduced them by 99% using PCA & t-SNE techniques."
     },
     {
@@ -26,6 +21,6 @@
     {
         "title": "Survey-form Web Application",
         "date": "Feb 2022",
-        "description": "Built a microservices-based survey application using Angular, Springboot, and AWS RDS. Deployed application through CI/CD pipeline (Jenkins, Docker, Github, & Kubernetes) on AWS-EC2, reducing deployment time by 40% and enabling faster feature releases and better user experience."
+        "description": "Deployed a microservices-based survey application using CI/CD pipeline (Jenkins & Docker) on AWS EC2. Reduced deployment time by 50%, enabling rapid and reliable updates to the AWS EC2-hosted application. Implemented Kubernetes Load Balancer to distribute traffic across 3 pods, boosting availability to 99.9%."
     }
 ]
