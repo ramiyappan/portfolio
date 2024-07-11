@@ -41,7 +41,7 @@ const Resume = () => {
                         <div className="row align-items-center">
                             <div className="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
                                 <h2 className="resume-name mb-0 text-uppercase">Ramaswamy Iyappan</h2>
-                                <div className="resume-tagline mb-3 mb-md-0">Data Analyst & Full-Stack Developer</div>
+                                <div className="resume-tagline mb-3 mb-md-0">Data Scientist & Full-Stack Developer</div>
                             </div>
                             <div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
                                 <ul className="list-unstyled mb-0">
@@ -82,7 +82,7 @@ const Resume = () => {
                                     and extensive experience in data science, machine learning, and software development. Proficient in 
                                     languages & frameworks including Python, SQL, PyTorch, TensorFlow, and Scikit-Learn. 
                                     Skilled in data analysis, deep neural networks, and cloud computing, with a proven track record of delivering 
-                                    impactful projects in fraud detection, classification, and predictive analytics. Possess strong leadership 
+                                    impactful projects in demand forecasting, predictive analytics, data preprocessing, and visualizations. Possess strong leadership 
                                     abilities demonstrated through successful teaching experiences and recognition in both academic and 
                                     professional settings.
                                 </p>

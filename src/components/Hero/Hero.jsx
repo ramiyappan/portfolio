@@ -16,13 +16,13 @@ const AboutMe = () => {
                         <div className="mb-2">
                             <h1 className='fw-bold'>Ramaswamy Iyappan</h1>
                         </div>
-                        <p className="lead greytext mb-3">Data Analyst & Full-Stack Developer</p>
+                        <p className="lead greytext mb-3">Data Scientist & Full-Stack Developer</p>
                         <hr />
                         <div className="row mb-2">
                             <div className="col-12">
                                 <p className='greytext'>
                                     Welcome to my digital hub! As a recent Computer Science graduate from George Mason University, 
-                                    Virginia, I specialize in Full-Stack development, Data Analysis, and Machine Learning,. 
+                                    Virginia, I specialize in Data Science, Data Analysis, and Full-Stack development. 
                                     Curious how I can elevate your project? Explore my portfolio and resume!
                                 </p>
                             </div>
