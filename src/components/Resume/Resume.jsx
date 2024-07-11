@@ -8,7 +8,7 @@ import data from './Projectinfo.json'
 const Resume = () => {
 
     const handleDownloadPDF = () => {
-        const pdfFilePath = './Data_Analyst_Resume.pdf';
+        const pdfFilePath = './Data_Analyst_UpdatedResume.pdf';
         const link = document.createElement('a');
         link.href = pdfFilePath;
         link.download = 'Ramaswamy_Iyappan_Resume.pdf';
