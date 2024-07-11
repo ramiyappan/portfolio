@@ -131,6 +131,8 @@ const Resume = () => {
                                             </ul>
                                         </div>
                                     </div>
+
+                                    {/* GTA */}
                                     <div className="item mb-3">
                                         <div className="item-heading row align-items-center mb-2">
                                             <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
