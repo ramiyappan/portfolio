@@ -139,7 +139,7 @@ const Resume = () => {
                                                 Graduate Teaching Assistant
                                             </h4>
                                             <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-                                                GMU | 
+                                                GMU | 2022 - 2023
                                             </div>
                                         </div>
                                         <div className="item-content">
