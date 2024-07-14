@@ -50,7 +50,7 @@ const Blog = () => {
                                     </p>
                                 </div>
                                 <div className="card-footer">
-                                    <small className="text-muted">Published 2 days ago</small>
+                                    <small className="text-muted">Published n days ago</small>
                                 </div>
                             </div>
                         </div>
