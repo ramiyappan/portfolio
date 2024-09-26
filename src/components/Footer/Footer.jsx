@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container single-col-max-width">
                 <h2 className="title">Need help with your project?</h2>
                 <p>
-                    Whether it's data analysis or full-stack applications, I'm here for you. 
+                    Whether it's data analysis or database infrastructures, I'm here for you. 
                     Let's chat about your needs and bring your ideas to life.
                 </p>
                 <div className="text-center">

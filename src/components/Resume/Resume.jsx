@@ -8,7 +8,7 @@ import data from './Projectinfo.json'
 const Resume = () => {
 
     const handleDownloadPDF = () => {
-        const pdfFilePath = './Data_Analyst_UpdatedResume.pdf';
+        const pdfFilePath = './Data_Scientist_Resume.pdf';
         const link = document.createElement('a');
         link.href = pdfFilePath;
         link.download = 'Ramaswamy_Iyappan_Resume.pdf';
@@ -41,7 +41,7 @@ const Resume = () => {
                         <div className="row align-items-center">
                             <div className="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
                                 <h2 className="resume-name mb-0 text-uppercase">Ramaswamy Iyappan</h2>
-                                <div className="resume-tagline mb-3 mb-md-0">Data Scientist & Full-Stack Developer</div>
+                                <div className="resume-tagline mb-3 mb-md-0">Data Scientist</div>
                             </div>
                             <div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
                                 <ul className="list-unstyled mb-0">
@@ -78,10 +78,10 @@ const Resume = () => {
                             </div>
                             <div className="col text-start">
                                 <p className="mb-0">
-                                    Dynamic and accomplished Computer Science professional with a Master's degree from George Mason University 
-                                    and extensive experience in data science, machine learning, and software development. Proficient in 
+                                    Dynamic and accomplished Data Science professional with a Master's degree from George Mason University 
+                                    and extensive experience in machine learning and DevOps. Proficient in 
                                     languages & frameworks including Python, SQL, PyTorch, TensorFlow, and Scikit-Learn. 
-                                    Skilled in data analysis, deep neural networks, and cloud computing, with a proven track record of delivering 
+                                    Skilled in data analysis, deep neural networks, Azure and AWS cloud, with a proven track record of delivering 
                                     impactful projects in demand forecasting, predictive analytics, data preprocessing, and visualizations. Possess strong leadership 
                                     abilities demonstrated through successful teaching experiences and recognition in both academic and 
                                     professional settings.
@@ -109,45 +109,75 @@ const Resume = () => {
                                     <div className="item mb-3">
                                         <div className="item-heading row align-items-center mb-2">
                                             <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                                Data Science Intern
+                                                Data Scientist
                                             </h4>
                                             <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-                                                US LBM | Jan 2023 - Dec 2023
+                                                US LBM | Jan 2024 - Present
                                             </div>
                                         </div>
                                         <div className="item-content">
                                             <p>
-                                                Developed demand forecasting models for a leading national distributor, 
-                                                achieving a MAPE of less than 20% for over 70% of SKUs using a Stacking Ensemble approach.
+                                                Led demand forecasting for a leading national distributor, 
+                                                enhancing supply chain planning across divisions and SKU levels.
                                             </p>
                                             <ul className="resume-list">
+                                                <li>Achieved a MAPE of less than 20% for over 70% of SKUs by using a Stacking Ensemble of time series models.</li>
                                                 <li>Employed advanced time series forecasting methods, including ARIMA, XGBoost, and Auto Deep AR, to forecast
                                                 sales up to 1 month ahead at various granularity levels.</li>
                                                 <li>Utilized Snowflake for data processing, reducing the data preparation time by 30%.</li>
-                                                <li>Implemented clustering techniques to improve modelling time for per-instance based models and improve MAPE for
-                                                neural network-based forecasts.</li>
+                                                <li>Maintained data pipelines using Snowflake, Python, and Tableau for seamless data processing and analysis.</li>
                                                 <li>Presented forecasting results to stakeholders using Tableau, enabling clear and actionable insights for demand
                                                 planning and supply chain optimization.</li>
                                             </ul>
                                         </div>
                                     </div>
 
-                                    {/* GTA */}
                                     <div className="item mb-3">
                                         <div className="item-heading row align-items-center mb-2">
                                             <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                                Graduate Teaching Assistant
+                                                Data Science Intern
                                             </h4>
                                             <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
-                                                GMU | 2022 - 2023
+                                                US LBM | May 2023 - Dec 2023
                                             </div>
                                         </div>
                                         <div className="item-content">
-                                            <p>
+                                            {/* <p>
+                                                Developed demand forecasting models for a leading national distributor, 
+                                                achieving a MAPE of less than 20% for over 70% of SKUs using a Stacking Ensemble approach.
+                                            </p> */}
+                                            <ul className="resume-list">
+                                                <li>Cleaned and preprocessed unstructured data, enhancing statistical efficiency and data quality for better analysis.</li>
+                                                <li>Assisted in feature engineering, extracting variables like seasonality and trends to improve forecast accuracy.</li>
+                                                <li>Performed EDA using Pandas and SQL to uncover key insights, KPIs, and customer usage patterns.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    {/* Data Analyst */}
+                                    <div className="item mb-3">
+                                        <div className="item-heading row align-items-center mb-2">
+                                            <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                                                Data Analyst
+                                            </h4>
+                                            <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                                                HCL TECH | 2018 - 2021
+                                            </div>
+                                        </div>
+                                        <div className="item-content">
+                                            {/* <p>
                                                 Instructed & facilitated the Principles of Computing course, 
                                                 conducted weekly office hours, assessed assignments, and provided 
                                                 personalized support to over 90 students for enhanced performance.
-                                            </p>
+                                            </p> */}
+                                            <ul className="resume-list">
+                                                <li>Collected, cleaned, and analyzed large datasets using SQL, Python, and R, reducing project turnaround time by 25%.
+                                                </li>
+                                                <li>Automated repetitive data analysis tasks with Python, saving 100+ hours of manual work and boosting productivity.</li>
+                                                <li>Built interactive Power BI dashboards, increasing user engagement by 18% and tracking key performance metrics.</li>
+                                                <li>Built ETL pipelines with Azure Data Factory, integrating data from multiple sources into Azure SQL DB for analysis.</li>
+                                                <li>Streamlined big data projects with PySpark and Azure Data Bricks, boosting data processing speed and scalability.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </section>
@@ -192,13 +222,15 @@ const Resume = () => {
                                     <div className="item">
                                         <h4 className="item-title">Technical</h4>
                                         <ul className="list-unstyled resume-skills-list">
-                                            <li className="mb-2">JavaScript/Angular/React</li>
-                                            <li className="mb-2">Node.js/Docker/Postman</li>
                                             <li className="mb-2">Python/PyTorch/TensorFlow</li>
+                                            <li className="mb-2">PySpark/Databricks</li>
                                             <li className="mb-2">Snowflake/PostgreSQL/MySQL</li>
-                                            <li className="mb-2">Tableau/Excel</li>
+                                            <li className="mb-2">Tableau/PowerBI/Excel</li>
                                             <li className="mb-2">EDA/Data Preprocessing</li>
-                                            <li>AWS/Kubernetes</li>
+                                            <li className="mb-2">AWS/Azure</li>
+                                            <li className="mb-2">Kubernetes/Docker</li>
+                                            <li className="mb-2">JavaScript/Angular/React</li>
+                                            <li className="mb-2">Node.js/Postman</li>
                                         </ul>
                                     </div>
                                     <div className="item">

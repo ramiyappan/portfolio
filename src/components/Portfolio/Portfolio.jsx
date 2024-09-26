@@ -22,8 +22,8 @@ const Portfolio = () => {
                     </h2>
                     <div className="intro">
                         <p>
-                            Welcome to my online Portfolio. I'm taking on freelance work at the moment. 
                             Want some help building your website?
+                            Dive into my projects and explore my expertise.
                         </p>
                     </div>
                     <Link className="btn btn-primary" to="/contact">

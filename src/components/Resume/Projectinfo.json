@@ -2,21 +2,12 @@
     {
         "title": "Credit Card Fraud Detection",
         "date": "Mar 2023",
-        "description": "Implemented ensemble learning models (RandomForest, XGBoost, VotingClassifier, MLP) to identify fraudulent transactions. Preprocessed unstructured data through EDA and Evaluated models using metrics Confusion Matrix, Precision-Recall curve, & AUC-PR.",
-        "points": [
-            "Identified and addressed class imbalance issue, leading to a 95% increase in minority class detection.",
-            "Achieved AUC-PR of 0.88 with RandomForest, which translates to a significant improvement in fraud detection rate."
-        ]
+        "description": "Implemented ensemble learning models (RandomForest, XGBoost, VotingClassifier, MLP) to identify fraudulent transactions. Achieved AUC-PR of 0.88 with RandomForest, which translates to a significant improvement in fraud detection rate."
     },
     {
         "title": "Hand-written digits Prediction",
         "date": "Nov 2022",
         "description": "Built a K-Means clustering model with t-SNE visualization, achieving an accuracy of 0.86. Analyzed high-dimensional digit features and reduced them by 99% using PCA & t-SNE techniques."
-    },
-    {
-        "title": "Heart-Disease Prediction",
-        "date": "Apr 2022",
-        "description": "Developed Logistic Regression model using Gradient Descent to predict heart-disease risk. Addressed overfitting through L1/L2 regularization, leading to an 8% accuracy improvement and a better bias-variance trade-off."
     },
     {
         "title": "Survey-form Web Application",

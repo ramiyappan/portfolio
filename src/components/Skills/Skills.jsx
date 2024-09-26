@@ -19,9 +19,9 @@ const Skills = () => {
                     What I do
                 </h2>
                 <div className="mb-5">
-                    I specialize in leveraging data to drive insights and solutions,
+                    With more than 4 years of professional expertise, I specialize in leveraging data to drive insights and solutions,
                     whether it's through crafting machine learning models for predictive analytics
-                    or building intuitive full-stack applications. My passion lies in transforming
+                    or building data pipelines through SQL. My passion lies in transforming
                     complex data into actionable strategies that enhance decision-making and drive business growth.
                 </div>
                 <div className="row">
