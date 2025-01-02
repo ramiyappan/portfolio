@@ -16,12 +16,12 @@ const AboutMe = () => {
                         <div className="mb-2">
                             <h1 className='fw-bold'>Ramaswamy Iyappan</h1>
                         </div>
-                        <p className="lead greytext mb-3">Data Scientist</p>
+                        <p className="lead greytext mb-3">Data Analyst</p>
                         <hr />
                         <div className="row mb-2">
                             <div className="col-12">
                                 <p className='greytext'>
-                                    Welcome to my digital hub! As an experienced Data Scientist and a recent Computer Science graduate, 
+                                    Welcome to my digital hub! As an experienced Data Analyst and a recent Computer Science graduate, 
                                     I specialize in Data Science, Data Analysis, and ETL pipelines. 
                                     Curious how I can elevate your project? Explore my portfolio and resume!
                                 </p>

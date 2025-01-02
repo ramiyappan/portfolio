@@ -41,7 +41,7 @@ const Resume = () => {
                         <div className="row align-items-center">
                             <div className="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
                                 <h2 className="resume-name mb-0 text-uppercase">Ramaswamy Iyappan</h2>
-                                <div className="resume-tagline mb-3 mb-md-0">Data Scientist</div>
+                                <div className="resume-tagline mb-3 mb-md-0">Data Analyst</div>
                             </div>
                             <div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
                                 <ul className="list-unstyled mb-0">
@@ -109,7 +109,7 @@ const Resume = () => {
                                     <div className="item mb-3">
                                         <div className="item-heading row align-items-center mb-2">
                                             <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                                Data Scientist
+                                                Data Analyst
                                             </h4>
                                             <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
                                                 US LBM | Jan 2024 - Present
@@ -135,7 +135,7 @@ const Resume = () => {
                                     <div className="item mb-3">
                                         <div className="item-heading row align-items-center mb-2">
                                             <h4 className="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
-                                                Data Science Intern
+                                                Data Analyst Intern
                                             </h4>
                                             <div className="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
                                                 US LBM | May 2023 - Dec 2023
